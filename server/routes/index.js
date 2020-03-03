@@ -6,4 +6,8 @@ router.get('/', (req, res, next) => {
   res.render('index');
 });
 
+router.use('/api', require('./auth.js'));
+
+
 module.exports = router;
+

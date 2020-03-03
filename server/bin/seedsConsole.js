@@ -45,7 +45,7 @@ mongoose
       controlsIncluded: 0,
       memoryCapacity:'-',
       gameIncluded: 3,
-      description:'Game Boy Color roja',
+      description:' vendo Game Boy Color roja',
       price: 100
     },
     {
@@ -81,13 +81,20 @@ mongoose
       price:60
     },
     {
-      //modificar aqui debajo
+      
       consoleModel:'PS3',
       controlsIncluded: 2,
       memoryCapacity:'-',
       gameIncluded: 3,
       description:'incluye juegos Sonic the Hedgehog 2,Mortal Kombat 3 y Streets of Rage 2',
-      price:60
-    }
-
+      price:200
+    },
+   {
+    consoleModel:'Game Boy Color',
+      controlsIncluded: 0,
+      memoryCapacity:'-',
+      gameIncluded: 0,
+      description:'compro game color',
+      price:90
+   }
   ]
