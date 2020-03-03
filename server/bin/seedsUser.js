@@ -9,8 +9,9 @@ const plainPassword1 = "123";
 const salt = bcrypt.genSaltSync(saltRounds);
 const hash1 = bcrypt.hashSync(plainPassword1, salt);
 
+const { DBURL } = process.env;
 mongoose
-  .connect('mongodb://localhost/user', {useNewUrlParser: true})
+  .connect(DBURL, {useNewUrlParser: true, useUnifiedTopology: true})
   .then(x => {
     console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
   })
@@ -20,7 +21,7 @@ mongoose
 
   User.collection.drop()
 
-const users = [
+const user = [
   {
     username: "Daniel Sainz",
     password:hash1,

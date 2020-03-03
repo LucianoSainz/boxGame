@@ -148,4 +148,10 @@ const game = [
     description:'vendo super mario bros',
     price:17
   }
-]
+];
+
+Game.create(game, (err) => {
+  if (err) { throw (err) }
+  console.log(`Created ${game.length} game`)
+  mongoose.connection.close()
+});

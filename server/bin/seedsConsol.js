@@ -1,7 +1,6 @@
 require('dotenv').config();
 const mongoose = require("mongoose");
-const Console = require("../models/Console");
-
+const Consol = require("../models/Consol");
 
 
 mongoose
@@ -13,9 +12,9 @@ mongoose
     console.error('Error connecting to mongo', err)
   });
 
-  Console.collection.drop()
+  Consol.collection.drop()
 
-  const console = [
+  const consol = [
     {
       consoleModel:'PS4',
       controlsIncluded: 2,
@@ -97,4 +96,10 @@ mongoose
       description:'compro game color',
       price:90
    }
-  ]
+  ];
+
+  Consol.create(consol, (err) => {
+    if (err) { throw (err) }
+    console.log(`Created ${consol.length} consol`)
+    mongoose.connection.close()
+  });
