@@ -19,6 +19,7 @@ mongoose
 
 const game = [
   {
+    photo:"",
     type:'Juego Nintendo Switch',
     title:'Luigi s Mansion 3',
     gender: 'adventure',
@@ -29,6 +30,7 @@ const game = [
     price:28.90
   },
   {
+    photo:"",
     type:'Juego PS4',
     title:'Juego PS4 Marvel´s Spider-Man',
     gender: 'Entretenimiento',
@@ -39,6 +41,7 @@ const game = [
     price:30
   },
   {
+    photo:"",
     type:'Juego Xbox One',
     title:' Xbox One South Park: La Vara de la Verdad',
     gender: ' Aventura',
@@ -49,6 +52,7 @@ const game = [
     price:15.50   
   },
   {
+    photo:"",
     type:' Juego PS3',
     title:' PES 2011',
     gender: ' Deportes',
@@ -59,6 +63,7 @@ const game = [
     price:17  
   },
   {
+    photo:"",
     type:' Juego PS4',
     title:' Resident Evil 3 Remake PS4',
     gender: ' Entretenimiento',
@@ -69,6 +74,7 @@ const game = [
     price:50.90 
   },
   {
+    photo:"",
     type:'Game Boy Color',
     title:'Pokemon especial pikachu edicion',
     gender: ' Entretenimiento',
@@ -79,6 +85,7 @@ const game = [
     price:60
   },
   {
+    photo:"",
     type:'Sega',
     title:'Sonic the Hedgehog',
     gender:'Videojuego de plataformas',
@@ -89,6 +96,7 @@ const game = [
     price:30
   },
   {
+    photo:"",
     type:'Family Game',
     title:'Captain Tsubasa Vol. II: Super Striker',
     gender:'football',
@@ -99,6 +107,7 @@ const game = [
     price:60
   },
   {
+    photo:"",
     type:'PS I',
     title:'Final Fantasy VII',
     gender:'Entretenimiento',
@@ -109,6 +118,7 @@ const game = [
     price:40
   },
   {
+    photo:"",
     type:'PC',
     title:'Domm',
     gender:'Entretenimiento',
@@ -119,6 +129,7 @@ const game = [
     price:50
   },
   {
+    photo:"",
     type:'PS I',
     title:'Driver',
     gender:'Carreras',
@@ -129,6 +140,7 @@ const game = [
     price:15
   },
   {
+    photo:"",
     type:'Game Boy',
     title:'Donkey Kong Land 3',
     gender:'Entretenimiento',
@@ -139,6 +151,7 @@ const game = [
     price:20
   },
   {
+    photo:"",
     type:'Family Game',
     title:'Super Mario Bros',
     gender:'Plataformas',

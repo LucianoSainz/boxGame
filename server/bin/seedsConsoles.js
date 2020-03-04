@@ -1,6 +1,6 @@
 require('dotenv').config();
 const mongoose = require("mongoose");
-const Consol = require("../models/Consol");
+const Consoles = require("../models/Consoles");
 
 
 mongoose
@@ -12,10 +12,11 @@ mongoose
     console.error('Error connecting to mongo', err)
   });
 
-  Consol.collection.drop()
+  Consoles.collection.drop()
 
-  const consol = [
+  const consoles = [
     {
+      photo:"",
       consoleModel:'PS4',
       controlsIncluded: 2,
       memoryCapacity:'1TB',
@@ -24,6 +25,7 @@ mongoose
       price: 300
     },
     {
+      photo:"",
       consoleModel:'Microsoft Xbox One',
       controlsIncluded: 1,
       memoryCapacity:'1TB',
@@ -32,6 +34,7 @@ mongoose
       price: 250
     },
     {
+      photo:"",
       consoleModel:'Family Game',
       controlsIncluded: 2,
       memoryCapacity:'-',
@@ -40,6 +43,7 @@ mongoose
       price: 50
     },
     {
+      photo:"",
       consoleModel:'Game Boy Color',
       controlsIncluded: 0,
       memoryCapacity:'-',
@@ -48,6 +52,7 @@ mongoose
       price: 100
     },
     {
+      photo:"",
       consoleModel:'PS I',
       controlsIncluded: 2,
       memoryCapacity:'Memory Card 128Mb',
@@ -56,6 +61,7 @@ mongoose
       price: 150
     },
     {
+      photo:"",
       consoleModel:'Game Boy',
       controlsIncluded: 0,
       memoryCapacity:'-',
@@ -64,6 +70,7 @@ mongoose
       price: 90
     },
     {
+      photo:"",
       consoleModel:'tamagotchi',
       controlsIncluded: 0,
       memoryCapacity:'-',
@@ -72,6 +79,7 @@ mongoose
       price: 20
     },
     {
+      photo:"",
       consoleModel:'Sega Genesis',
       controlsIncluded: 2,
       memoryCapacity:'-',
@@ -80,7 +88,7 @@ mongoose
       price:60
     },
     {
-      
+      photo:"",
       consoleModel:'PS3',
       controlsIncluded: 2,
       memoryCapacity:'-',
@@ -89,7 +97,8 @@ mongoose
       price:200
     },
    {
-    consoleModel:'Game Boy Color',
+      photo:"",
+      consoleModel:'Game Boy Color',
       controlsIncluded: 0,
       memoryCapacity:'-',
       gameIncluded: 0,
@@ -98,8 +107,8 @@ mongoose
    }
   ];
 
-  Consol.create(consol, (err) => {
+  Consoles.create(consoles, (err) => {
     if (err) { throw (err) }
-    console.log(`Created ${consol.length} consol`)
+    console.log(`Created ${consoles.length} consoles`)
     mongoose.connection.close()
   });

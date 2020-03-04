@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const Schema   = mongoose.Schema;
 
-const consoleSchema = new Schema({
+const consolesSchema = new Schema({
   consoleModel:String,
   controlIncluded:Number,
   memoryCapacity:String,
@@ -12,5 +12,5 @@ const consoleSchema = new Schema({
 
 });
 
-const Console = mongoose.model('Console', consoleSchema);
-module.exports = Console;
+const Consoles = mongoose.model('Consoles', consolesSchema);
+module.exports = Consoles;

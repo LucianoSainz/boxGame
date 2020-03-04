@@ -64,7 +64,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')));
 
 
-
 // default value for title local
 app.locals.title = 'Express - Generated with IronGenerator';
 
@@ -72,6 +71,11 @@ app.locals.title = 'Express - Generated with IronGenerator';
 
 const authRouter = require('./routes/auth');
 app.use('/api/auth', authRouter);
+
+
+const gamesRoute = require('./routes/games');
+app.use('/api/games', gamesRoute);
+
 
 
 module.exports = app;
