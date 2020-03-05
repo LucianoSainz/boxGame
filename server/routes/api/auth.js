@@ -4,7 +4,7 @@ const bcrypt = require('bcryptjs');
 const User = require('../../models/User');
 const passport = require('passport');
 const mongoose = require('mongoose');
-const parser = require('./../configs/cloudinary')
+const parser = require('../../configs/cloudinary')
 
 
 
