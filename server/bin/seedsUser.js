@@ -9,9 +9,9 @@ const plainPassword1 = "123";
 const salt = bcrypt.genSaltSync(saltRounds);
 const hash1 = bcrypt.hashSync(plainPassword1, salt);
 
-const { DBURL } = process.env;
+
 mongoose
-  .connect(DBURL, {useNewUrlParser: true, useUnifiedTopology: true})
+  .connect(`${process.env.DBURL}`, {useNewUrlParser: true, useUnifiedTopology: true})
   .then(x => {
     console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
   })

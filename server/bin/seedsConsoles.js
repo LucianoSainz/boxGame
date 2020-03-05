@@ -2,9 +2,8 @@ require('dotenv').config();
 const mongoose = require("mongoose");
 const Consoles = require("../models/Consoles");
 
-
 mongoose
-  .connect('mongodb://localhost/user', {useNewUrlParser: true})
+.connect(`${process.env.DBURL}`, {useNewUrlParser: true, useUnifiedTopology: true})
   .then(x => {
     console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
   })

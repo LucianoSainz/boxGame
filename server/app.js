@@ -11,12 +11,12 @@ const session = require('express-session');
 const MongoStore = require('connect-mongo')(session);
 const cors = require('cors');
 
- const { DBURL } = process.env;
+ 
 mongoose.Promise = Promise;
 mongoose
-  .connect(DBURL)
+  .connect(`${process.env.DBURL}`, {useNewUrlParser: true, useUnifiedTopology: true})
   .then(() => {
-    console.log(`Connected to Mongo on ${DBURL}`)
+    console.log(`Connected to Mongo on ${process.env.DBURL}`)
   }).catch(err => {
     console.error('Error connecting to mongo', err)
   });
@@ -68,14 +68,11 @@ app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')));
 app.locals.title = 'Express - Generated with IronGenerator';
 
 
-
-const authRouter = require('./routes/auth');
-app.use('/api/auth', authRouter);
+app.use("/", require("./routes"))
 
 
-const gamesRoute = require('./routes/games');
-app.use('/api/games', gamesRoute);
-
-
+app.use((req,res) => {
+  res.sendFile(__dirname + "/public/index.html");
+});
 
 module.exports = app;

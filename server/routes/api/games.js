@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const games = require('../models/Game')
+const games = require('../../models/Game')
 
 router.get('/', (req, res, next) => {
   games.find()

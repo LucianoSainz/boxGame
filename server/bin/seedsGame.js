@@ -6,7 +6,7 @@ const Game = require("../models/Game");
 
 
 mongoose
-  .connect('mongodb://localhost/user', {useNewUrlParser: true})
+  .connect(`${process.env.DBURL}`, {useNewUrlParser: true, useUnifiedTopology: true})
   .then(x => {
     console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
   })
@@ -19,7 +19,7 @@ mongoose
 
 const game = [
   {
-    photo:"",
+    photo:"../images/luigi.jpg",
     type:'Juego Nintendo Switch',
     title:'Luigi s Mansion 3',
     gender: 'adventure',
@@ -42,7 +42,7 @@ const game = [
   },
   {
     photo:"",
-    type:'Juego Xbox One',
+    type:'Pc',
     title:' Xbox One South Park: La Vara de la Verdad',
     gender: ' Aventura',
     ageClassification: +18,
@@ -120,7 +120,7 @@ const game = [
   {
     photo:"",
     type:'PC',
-    title:'Domm',
+    title:'Doom',
     gender:'Entretenimiento',
     ageClassification: +10,
     year: 1993,
@@ -152,11 +152,11 @@ const game = [
   },
   {
     photo:"",
-    type:'Family Game',
+    type:'Nintendo Nes',
     title:'Super Mario Bros',
     gender:'Plataformas',
     ageClassification: +7,
-    year: 1985,
+    year: 1987,
     lenguage: 'English +' ,
     description:'vendo super mario bros',
     price:17
