@@ -1,7 +1,6 @@
 // navbar/Navbar.js
 
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 import AuthService from "../auth/AuthService";
 import "./Navbar.css"
 

@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from "react";
 import Service from './Service';
 
 
@@ -45,11 +44,9 @@ class Home extends React.Component {
         <div>
           <h3>our best offers Consoles</h3>
           {this.state.consoles.map(consol => (
-              <div key={consol._id}>
-                <Link to={`/consoles/${consol._id}`}>
+              <div>
                 <img src={consol.photo} alt=""/>
                 <h3>{consol.consolesModel}</h3>
-              </Link>
               </div>
           ))}
         </div>

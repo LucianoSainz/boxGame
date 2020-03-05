@@ -6,7 +6,7 @@ const Game = require("../models/Game");
 
 const game = [
   {
-    photo:"../images/luigi.jpg",
+    photo:"",
     type:'Juego Nintendo Switch',
     title:'Luigi s Mansion 3',
     gender: 'adventure',
