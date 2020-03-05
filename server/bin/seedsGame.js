@@ -4,19 +4,6 @@ const User = require("../models/User");
 const Game = require("../models/Game");
 
 
-
-mongoose
-  .connect(`${process.env.DBURL}`, {useNewUrlParser: true, useUnifiedTopology: true})
-  .then(x => {
-    console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
-  })
-  .catch(err => {
-    console.error('Error connecting to mongo', err)
-  });
-
-  Game.collection.drop()
-
-
 const game = [
   {
     photo:"../images/luigi.jpg",
@@ -163,8 +150,23 @@ const game = [
   }
 ];
 
-Game.create(game, (err) => {
-  if (err) { throw (err) }
-  console.log(`Created ${game.length} game`)
-  mongoose.connection.close()
-});
+
+mongoose
+  .connect(`${process.env.DBURL}`, {useNewUrlParser: true, useUnifiedTopology: true})
+  .then(x => {
+    console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
+    return Game.collection.drop()
+    .then(_ => {
+      return Game.create(game, (err) => {
+        if (err) { throw (err) }
+        console.log(`Created ${game.length} game`)
+        mongoose.connection.close()
+      });
+    })
+  })
+  .catch(err => {
+    console.error('Error connecting to mongo', err)
+  });
+
+
+
