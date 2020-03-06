@@ -1,8 +1,6 @@
 import React from 'react';
 import Service from './Service';
 
-
-
 class Home extends React.Component {
   constructor(props){
     super(props)
@@ -14,16 +12,22 @@ class Home extends React.Component {
   }
 
   componentDidMount() {
-    console.log(this.state)
     this.service.getGames()
     .then(response => {
-      console.log(response)
       this.setState({
         games: response
       })
 
     })
+    this.service.getConsoles()
+    .then(response => {
+      this.setState({
+        consoles: response
+      })
+
+    })
   }
+  
 
   render() {
     return (
@@ -34,7 +38,7 @@ class Home extends React.Component {
           {this.state.games.map(game => (
                 <div>
                   <img src={game.photo} alt=""/>
-                <h4>{game.title}</h4>
+                <h5>title: {game.title}</h5>
                 </div>
           ))}
         </div>
@@ -46,7 +50,7 @@ class Home extends React.Component {
           {this.state.consoles.map(consol => (
               <div>
                 <img src={consol.photo} alt=""/>
-                <h3>{consol.consolesModel}</h3>
+                <p>{consol.consoleModel}</p>
               </div>
           ))}
         </div>

@@ -17,8 +17,13 @@ router.get('/:id', (req, res, next) => {
   .then(onegame => {
     res.json(onegame)
   })
-  .catch (err => next(err))
-  console.log('error');
+  .catch (err => console.log('error'))
 })
 
+
+// router.post('/add', (req, res, next) => {
+// })
+
 module.exports = router;
+
+

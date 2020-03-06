@@ -2,7 +2,7 @@
 
 import React, { Component } from "react";
 import AuthService from "../auth/AuthService";
-import "./Navbar.css"
+import "./Navbar.scss"
 
 class Navbar extends Component {
   constructor(props) {
@@ -39,6 +39,7 @@ class Navbar extends Component {
       return (
         <div>
           <nav className="nav-style">
+            Hola Luciano, aqui va el menu
           </nav>
         </div>
       );
