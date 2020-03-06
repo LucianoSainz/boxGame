@@ -6,7 +6,7 @@ const Game = require("../models/Game");
 
 const game = [
   {
-    photo:"",
+    photo:"https://res.cloudinary.com/dlbu6iemy/image/upload/v1583495125/boxGame/71srfb1tCXL._AC_SY355__kfl1kg.jpg",
     type:'Juego Nintendo Switch',
     title:'Luigi s Mansion 3',
     gender: 'adventure',

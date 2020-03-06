@@ -1,7 +1,8 @@
 // navbar/Navbar.js
 
 import React, { Component } from "react";
-import AuthService from "../auth/AuthService";
+import {Link} from 'react-router-dom'
+import AuthService from "../../services/AuthService";
 import "./Navbar.scss"
 
 class Navbar extends Component {
@@ -39,7 +40,10 @@ class Navbar extends Component {
       return (
         <div>
           <nav className="nav-style">
+            {/* <Navbar profile = {profile.state.profile}/> */}
             Hola Luciano, aqui va el menu
+            <Link to="/login">login</Link>
+
           </nav>
         </div>
       );
