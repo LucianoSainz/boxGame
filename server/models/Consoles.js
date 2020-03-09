@@ -1,14 +1,15 @@
 const mongoose = require('mongoose');
-const Schema   = mongoose.Schema;
+const Schema = mongoose.Schema;
 
 const consolesSchema = new Schema({
-  consoleModel:String,
-  controlIncluded:Number,
-  memoryCapacity:String,
-  gameIncluded:Number,
-  description:String,
-  photo: {type:String},
-  price:Number
+  consoleModel: String,
+  controlIncluded: Number,
+  memoryCapacity: String,
+  gameIncluded: Number,
+  description: String,
+  img: { type: String },
+  // imageUrl: { type: String, required: true },
+  price: Number
 
 });
 

@@ -6,7 +6,8 @@ const Game = require("../models/Game");
 
 const game = [
   {
-    photo:"https://res.cloudinary.com/dlbu6iemy/image/upload/v1583495125/boxGame/71srfb1tCXL._AC_SY355__kfl1kg.jpg",
+    // imageUrl:"https://res.cloudinary.com/dlbu6iemy/image/upload/v1583495125/boxGame/71srfb1tCXL._AC_SY355__kfl1kg.jpg",
+    img:"",
     type:'Juego Nintendo Switch',
     title:'Luigi s Mansion 3',
     gender: 'adventure',
@@ -17,7 +18,8 @@ const game = [
     price:28.90
   },
   {
-    photo:"",
+    // imageUrl:"",
+    img:"",
     type:'Juego PS4',
     title:'Juego PS4 Marvel´s Spider-Man',
     gender: 'Entretenimiento',
@@ -28,7 +30,8 @@ const game = [
     price:30
   },
   {
-    photo:"",
+    // imageUrl:"",
+    img:"",
     type:'Pc',
     title:' Xbox One South Park: La Vara de la Verdad',
     gender: ' Aventura',
@@ -39,7 +42,8 @@ const game = [
     price:15.50   
   },
   {
-    photo:"",
+    // imageUrl:"",
+    img:"",
     type:' Juego PS3',
     title:' PES 2011',
     gender: ' Deportes',
@@ -50,7 +54,8 @@ const game = [
     price:17  
   },
   {
-    photo:"",
+    // imageUrl:"",
+    img:"",
     type:' Juego PS4',
     title:' Resident Evil 3 Remake PS4',
     gender: ' Entretenimiento',
@@ -61,7 +66,8 @@ const game = [
     price:50.90 
   },
   {
-    photo:"",
+    // imageUrl:"",
+    img:"",
     type:'Game Boy Color',
     title:'Pokemon especial pikachu edicion',
     gender: ' Entretenimiento',
@@ -72,7 +78,8 @@ const game = [
     price:60
   },
   {
-    photo:"",
+    // imageUrl:"",
+    img:"",
     type:'Sega',
     title:'Sonic the Hedgehog',
     gender:'Videojuego de plataformas',
@@ -83,7 +90,8 @@ const game = [
     price:30
   },
   {
-    photo:"",
+    // imageUrl:"",
+    img:"",
     type:'Family Game',
     title:'Captain Tsubasa Vol. II: Super Striker',
     gender:'football',
@@ -94,7 +102,8 @@ const game = [
     price:60
   },
   {
-    photo:"",
+    // imageUrl:"",
+    img:"",
     type:'PS I',
     title:'Final Fantasy VII',
     gender:'Entretenimiento',
@@ -105,7 +114,8 @@ const game = [
     price:40
   },
   {
-    photo:"",
+    // imageUrl:"",
+    img:"",
     type:'PC',
     title:'Doom',
     gender:'Entretenimiento',
@@ -116,7 +126,8 @@ const game = [
     price:50
   },
   {
-    photo:"",
+    // imageUrl:"",
+    img:"",
     type:'PS I',
     title:'Driver',
     gender:'Carreras',
@@ -127,7 +138,8 @@ const game = [
     price:15
   },
   {
-    photo:"",
+    // imageUrl:"",
+    img:"",
     type:'Game Boy',
     title:'Donkey Kong Land 3',
     gender:'Entretenimiento',
@@ -138,7 +150,8 @@ const game = [
     price:20
   },
   {
-    photo:"",
+    // imageUrl:"",
+    img:"",
     type:'Nintendo Nes',
     title:'Super Mario Bros',
     gender:'Plataformas',

@@ -21,8 +21,7 @@ router.get('/:id', (req, res, next) => {
 })
 
 
-// router.post('/add', (req, res, next) => {
-// })
+
 
 module.exports = router;
 

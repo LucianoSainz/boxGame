@@ -76,4 +76,8 @@ app.use((req,res) => {
   res.sendFile(__dirname + "/public/index.html");
 });
 
+
+//esto pertenece a cloudinary
+// app.use('/api', require('./routes/api/file-upload-routes'));
+
 module.exports = app;

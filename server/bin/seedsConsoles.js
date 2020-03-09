@@ -6,7 +6,7 @@ const Consoles = require("../models/Consoles");
 
 const consoles = [
   {
-    photo:"",
+    imageUrl:"",
     consoleModel:'PS4',
     controlsIncluded: 2,
     memoryCapacity:'1TB',
@@ -15,7 +15,7 @@ const consoles = [
     price: 300
   },
   {
-    photo:"",
+    imageUrl:"",
     consoleModel:'Microsoft Xbox One',
     controlsIncluded: 1,
     memoryCapacity:'1TB',
@@ -24,16 +24,16 @@ const consoles = [
     price: 250
   },
   {
-    photo:"",
-    consoleModel:'Family Game',
+    imageUrl:"",
+    consoleModel:'Nintendo Nes',
     controlsIncluded: 2,
     memoryCapacity:'-',
     gameIncluded: 3,
-    description:'se vende Family Game bien conservado con los juegos Mario bros3, Exite Bike y Galaxian',
+    description:'se vende Nintendo Nes bien conservado con los juegos Mario bros3, Exite Bike y Galaxian',
     price: 50
   },
   {
-    photo:"",
+    imageUrl:"",
     consoleModel:'Game Boy Color',
     controlsIncluded: 0,
     memoryCapacity:'-',
@@ -42,7 +42,7 @@ const consoles = [
     price: 100
   },
   {
-    photo:"",
+    imageUrl:"",
     consoleModel:'PS I',
     controlsIncluded: 2,
     memoryCapacity:'Memory Card 128Mb',
@@ -51,7 +51,7 @@ const consoles = [
     price: 150
   },
   {
-    photo:"",
+    imageUrl:"",
     consoleModel:'Game Boy',
     controlsIncluded: 0,
     memoryCapacity:'-',
@@ -60,7 +60,7 @@ const consoles = [
     price: 90
   },
   {
-    photo:"",
+    imageUrl:"",
     consoleModel:'tamagotchi',
     controlsIncluded: 0,
     memoryCapacity:'-',
@@ -69,7 +69,7 @@ const consoles = [
     price: 20
   },
   {
-    photo:"",
+    imageUrl:"",
     consoleModel:'Sega Genesis',
     controlsIncluded: 2,
     memoryCapacity:'-',
@@ -78,7 +78,7 @@ const consoles = [
     price:60
   },
   {
-    photo:"",
+    imageUrl:"",
     consoleModel:'PS3',
     controlsIncluded: 2,
     memoryCapacity:'-',
@@ -87,7 +87,7 @@ const consoles = [
     price:200
   },
  {
-    photo:"",
+  imageUrl:"",
     consoleModel:'Game Boy Color',
     controlsIncluded: 0,
     memoryCapacity:'-',
