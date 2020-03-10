@@ -5,11 +5,8 @@ const gameSchema = new Schema({
   type: String,
   title: String,
   gender: String,
-  ageClassification: Number,
-  year: Number,
-  // imageUrl: { type: String, required: true 
-  img: { type: String },
-  lenguage: String,
+  year: Number, 
+  img: { type: String},
   description: String,
   price: Number
 

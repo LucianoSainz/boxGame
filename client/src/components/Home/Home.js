@@ -1,13 +1,22 @@
 import React from 'react';
 import {Link} from "react-router-dom"
+import logo from "../navbar/logo_transparent.png";
+import "./Home.scss"
+
 
 function Home(props) {
 
     return (
-      <div>
+        
           <div>
-        <div>
-          <h3>our best offers Games</h3>
+            <header className="logo">
+            <img src={logo} alt="" width="500" heith="300"/>
+            </header>
+
+        {/* SECTION GAMES */}
+        <div className="all">
+        <div className="games">
+          <h3>Our best offers Games:</h3>
           {props.games.map(game => (
             <Link to={"game/"+game._id}>
               <div>
@@ -17,10 +26,12 @@ function Home(props) {
             </Link>
           ))}
         </div>
-      </div>
-      <div>
-      <div>
-        <h3>our best offers Games</h3>
+      
+
+      {/* SECTION CONSOLES */}
+      
+      <div className="consoles" >
+        <h3>Our best deals on consoles:</h3>
           {props.consoles.map(consol => (
               <Link to={"console/"+consol._id}>
                 <div>
@@ -31,6 +42,8 @@ function Home(props) {
           ))}
         </div>
       </div>
+     
+     
       </div>
 
     )

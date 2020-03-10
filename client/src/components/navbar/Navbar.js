@@ -1,9 +1,10 @@
 // navbar/Navbar.js
 
 import React, { Component } from "react";
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import AuthService from "../../services/AuthService";
 import "./Navbar.scss"
+import logo from "../navbar/logo.png";
 
 class Navbar extends Component {
   constructor(props) {
@@ -23,26 +24,47 @@ class Navbar extends Component {
   render() {
     if (this.state.loggedInUser) {
       return (
-        <nav className="nav-style">
-          <ul>
-            <li>
+        <nav className="menu">
+          <div>
+            <img src={logo} alt="" width="80" heith="85" />
+          </div>
+          <div className="one">
+            <div className="two">
+              <Link className="linav" to="/home">Home</Link>
+            </div>
+            <div className="two">
+              <Link className="linav" to="/addGame">AddGame</Link>
+            </div>
+            <div className="two">
+              <Link className="linav" to="/addConsoles">AddConsoles</Link>
+            </div>
+            <div className="two">
               <a onClick={this.handleLogout}>Logout</a>
-            </li>
-          </ul>
-
-          <div className="header">
-            {/* <img src={logo} alt="" height="100"/> */}
-            <h2>Welcome {this.state.loggedInUser.username} - Ironhacker</h2>
+            </div>
           </div>
         </nav>
+     
       );
+
     } else {
       return (
         <div>
-          <nav className="nav-style">
-            {/* <Navbar profile = {profile.state.profile}/> */}
-            Hola Luciano, aqui va el menu
-            <Link to="/login">login</Link>
+          <nav className="menu">
+            <div>
+              <img src={logo} alt="" width="80" heith="85" />
+            </div>
+            <div className="one">
+              <div className="two">
+                <Link className="linav" to="/login">Login</Link>
+              </div>
+              <div className="two">
+                <Link className="linav" to="/signup">Signup</Link>
+              </div>
+              <div className="two">
+                <Link className="linav" to="/home">Home</Link>
+              </div>
+
+            </div>
 
           </nav>
         </div>

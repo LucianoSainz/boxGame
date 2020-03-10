@@ -1,10 +1,12 @@
 const express = require('express');
 const router = express.Router();
 const Game = require('../../models/Game')
+// // include CLOUDINARY:
+// const uploader = require('../../configs/cloudinary');
 
-
+//router.post('/upload', uploader.single("imageUrl"), (req, res, next) => {
+  
 router.post('/addGame', (req, res, next) => {
-
   Game.create(req.body)
   .then(thisGame => res.json(thisGame))
   .catch(err => console.log(err));

@@ -19,6 +19,7 @@ class GameDetail extends React.Component {
             .filter(game => game._id === this.props.match.params.id)
             .map(game => (
                 game.title
+                
 
             )
 

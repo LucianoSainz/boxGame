@@ -1,7 +1,8 @@
 // auth/Signup.js
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import AuthService from '../../services/AuthService'
+import AuthService from '../../services/AuthService'; 
+import "./Login.scss"
 
 class Login extends Component {
   constructor(props) {
@@ -42,38 +43,39 @@ class Login extends Component {
   render() {
 
     return (<div>
-      <h3>login</h3>
+      <h3 className="titleOne">login</h3>
 
+      <div className="login">
       <form onSubmit={this.handleFormSubmit}>
         <fieldset>
-          <label>Username:</label>
-          <input type="text" name="username" value={this.state.username} onChange={e => this.handleChange(e)} />
+       <label className="user"></label>
+          <input type="text" name="username" placeholder="Username" value={this.state.username} onChange={e => this.handleChange(e)} />
         </fieldset>
 
         <fieldset>
-          <label>Password:</label>
-          <input type="password" name="password" value={this.state.password} onChange={e => this.handleChange(e)} />
+          <label className="password"></label>
+          <input type="password" name="password" placeholder="Password" value={this.state.password} onChange={e => this.handleChange(e)} />
         </fieldset>
 
-        <input type="submit" value="Login" />
-      </form>
 
-      <div>
-     <nav className="nav-style">
-       <ul>
-         <li>
-           <Link to="/signup">You still don't have an account: Signup</Link>
-         </li>
-         </ul>
-         </nav>
-         </div>
+       <div className="botton">
+        <input type="submit" value="Login" />
+      </div>
+       
+        </form>
+
+       </div>
+
+       <div>
+        <nav className="link">
+              <Link to="/signup">You still don't have an account: Signup</Link>
+        </nav>
+      </div>
 
       <h1>{this.state.error ? 'Error' : ''}</h1>
-    </div>)
-  
-         
+      </div>
+    )
   }
-  
 }
 
 export default Login;

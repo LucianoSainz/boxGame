@@ -2,16 +2,17 @@
 import React, { Component } from 'react';
 import AuthService from '../../services/AuthService'
 import { Link } from 'react-router-dom';
+import "./Login.scss"
 
-//signup y login son iguales a excepción de el html renderizado y el endpoint de nuestra API rest a la que llamamos
+
 //uno llama a /signup y el otro a /login usando nuestro AuthService
 class Signup extends Component {
-  constructor(props){
+  constructor(props) {
     super(props);
     this.state = { username: '', password: '' };
     this.service = new AuthService();
   }
-    
+
   handleFormSubmit = (event) => {
     event.preventDefault();
     const username = this.state.username;
@@ -19,63 +20,64 @@ class Signup extends Component {
 
     //aquí llamamos al endpoint /signup de nuestra API Rest usando nuestro AuthService
     this.service.signup(username, password)
-    .then( response => {
+      .then(response => {
         this.setState({
-            username: "", 
-            password: "",
+          username: "",
+          password: "",
         });
         //aquí elevamos el nuevo usuario una vez creado a App usando getUser via props
         //por tanto, informamos a App de que el nuevo usuario ha sido creado, provocando un re-render
         //y mostrando la parte de contenidos. Mira la función getUser de App para más info (date cuenta de que establece el state de App)
         this.props.getUser(response.user)
-    })
-    .catch(error => {
-      this.setState({
-        username: username,
-        password: password,
-        error: true
-      });
-    })
+      })
+      .catch(error => {
+        this.setState({
+          username: username,
+          password: password,
+          error: true
+        });
+      })
   }
 
-  handleChange = (event) => {  
-    const {name, value} = event.target;
-    this.setState({[name]: value});
+  handleChange = (event) => {
+    const { name, value } = event.target;
+    this.setState({ [name]: value });
   }
-      
+
 
   render() {
-    return(
-      <div>
-        <h3>Signup</h3>
+    return (<div>
+      <h3 className="titleOne">Signup</h3>
 
+      <div className="login">
         <form onSubmit={this.handleFormSubmit}>
           <fieldset>
-            <label>Username:</label>
-            <input type="text" name="username" value={this.state.username} onChange={ e => this.handleChange(e)}/>
+            <label className="user"></label>
+            <input type="text" name="username" placeholder="Username" value={this.state.username} onChange={e => this.handleChange(e)} />
           </fieldset>
-          
+
           <fieldset>
-            <label>Password:</label>
-            <input type="password" name="password" value={this.state.password} onChange={ e => this.handleChange(e)} />
+            <label className="password"></label>
+            <input type="password" name="password" placeholder="Password" value={this.state.password} onChange={e => this.handleChange(e)} />
           </fieldset>
-          
-          <input type="submit" value="Sign up" />
+
+
+          <div className="botton">
+            <input type="submit" value="Sign up" />
+          </div>
+
         </form>
-
-        {/* aqui va lo de que haga login si tiene cuenta */}
-        <div>
-     <nav className="nav-style">
-       <ul>
-         <li>
-           <Link to="/login">do you have an account? login</Link>
-         </li>
-         </ul>
-         </nav>
-         </div>
-
-        <h1>{this.state.error ? 'Error' : ''}</h1>
       </div>
+
+      <div>
+        <nav className="link">
+          <Link to="/login">do you have an account? login</Link>
+        </nav>
+      </div>
+
+      <h1>{this.state.error ? 'Error' : ''}</h1>
+    </div>
+
     )
   }
 }

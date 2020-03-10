@@ -2,13 +2,13 @@ import React from 'react';
 import { Redirect } from 'react-router-dom';
 
 
-class ConsolesDetail extends React.Component {
+class ConsolesDetails extends React.Component {
     constructor(props) {
         super(props);
     }   
 
     componentDidMount() {
-        return this.props.fetchGames()
+        return this.props.fetchConsoles()
     }
 
     // Annadir redireccion a login
@@ -18,7 +18,7 @@ class ConsolesDetail extends React.Component {
             {this.props.allConsoles
             .filter(consoles => consoles._id === this.props.match.params.id)
             .map(consoles => (
-                consoles.title
+                consoles.consoleModel
 
             )
 
@@ -30,4 +30,4 @@ class ConsolesDetail extends React.Component {
 
 }
 
-export default GameDetail
+export default ConsolesDetails
