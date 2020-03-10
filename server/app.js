@@ -29,7 +29,8 @@ const app = express();
 // Middleware Setup
 var whitelist = [
   'http://localhost:3000',
-  "https://box-game.herokuapp.com/"
+  'https://box-game.herokuapp.com'
+  
 ];
 var corsOptions = {
   origin: function(origin, callback){

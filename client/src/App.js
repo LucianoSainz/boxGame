@@ -100,7 +100,7 @@ class App extends Component {
             <main>
               
               <Switch>
-                <Route exact path="/" render={()=><Home consoles={this.state.consoles} games={this.state.games} ></Home>} /> 
+                /<Route exact path="/" render={()=><Home consoles={this.state.consoles} games={this.state.games} ></Home>} /> 
                 <Route exact path="/home" render={()=><Home consoles={this.state.consoles} games={this.state.games} ></Home>} /> 
                 <Route exact path="/addGame" render={()=><AddGame></AddGame>} />  
                 <Route exact path="/addConsoles" render={()=><AddConsoles></AddConsoles>} />            
