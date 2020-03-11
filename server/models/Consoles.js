@@ -7,7 +7,7 @@ const consolesSchema = new Schema({
   memoryCapacity: String,
   gameIncluded: Number,
   description: String,
-  img: { type: String},
+  imageUrl: { type: String, required: true },
   price: Number
 
 });
