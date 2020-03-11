@@ -15,6 +15,9 @@ class GameDetail extends React.Component {
     render () {
         return (
             <div>
+                <addGame></addGame>
+            
+            <div>
             {this.props.allGames
             .filter(game => game._id === this.props.match.params.id)
             .map(game => (
@@ -25,6 +28,7 @@ class GameDetail extends React.Component {
 
             
             )}
+            </div>
             </div>
         )
     }

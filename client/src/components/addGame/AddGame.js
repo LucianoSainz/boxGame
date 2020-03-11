@@ -2,7 +2,7 @@ import React from 'react';
 import Service from '../../services/Service';
 
 
-class AddConsoles extends React.Component {
+class addGame extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -30,7 +30,7 @@ class AddConsoles extends React.Component {
         const description = this.state.description;
         const price = this.state.price;
 
-        this.service.getAddGame(this.state)
+        this.service.addGame(this.state)
 
 
             .then(response => {
@@ -91,11 +91,27 @@ class AddConsoles extends React.Component {
             year: event.target.value
         })
     }
-    handleImageUrlInput = (event) => {
-        this.setState({
-            imageUrl: event.target.files[0]
-        })
+
+    
+
+    handleFileUpload = e => {
+        console.log("The file to be uploaded is: ", e.target.files[0]);
+        const uploadData = new FormData();
+
+        uploadData.append("imageUrl", e.target.files[0]);
+        this.service.handleUpload(uploadData)
+            .then(response => {
+             console.log(response)
+                this.setState({ imageUrl: response.secure_url }, ()=> console.log(this.state));
+            })
+            .catch(err => {
+                console.log("Error while uploading the file: ", err);
+            });
     }
+
+
+
+
     handleDescriptionInput = (event) => {
         this.setState({
             description: event.target.value
@@ -126,7 +142,7 @@ class AddConsoles extends React.Component {
                     <input type="number" name="year" value={this.state.year} onChange={(e) => this.handleYearInput(e)} />
 
                     <label>imageUrl:</label>
-                    <input type="file" name="imageUrl" value={this.state.imageUrl} onChange={(e) => this.handleImageUrlInput(e)} />
+                    <input type="file" name="imageUrl" value={this.state.imageUrl} onChange={(e) => this.handleFileUpload(e)} />
 
                     <label>Desription:</label>
                     <input type="text" name="description" value={this.state.description} onChange={(e) => this.handleDescriptionInput(e)} />
@@ -141,4 +157,4 @@ class AddConsoles extends React.Component {
     }
 }
 
-export default AddConsoles;
+export default addGame;

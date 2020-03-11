@@ -19,10 +19,18 @@ class Service {
   }
 
 
-  addGame = (type, title, gender, year, imageUrl, description, price) => this.service.post(`/addGame`, {type, title, gender, year, imageUrl, description, price})
-  .then(response => {
-        return response.data
-})
+  handleUpload (theFile) {
+     console.log('file in service: ', theFile)
+    return this.service.post('/upload', theFile)
+      .then(response =>  response.data)
+      
+    
+  }
+
+//   addGame = (type, title, gender, year, imageUrl, description, price) => this.service.post(`/addGame`, {type, title, gender, year, imageUrl, description, price})
+//   .then(response => {
+//         return response.data
+// })
 }
 
   
