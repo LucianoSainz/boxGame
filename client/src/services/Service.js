@@ -18,15 +18,13 @@ class Service {
       .then(response => response.data)
   }
 
-  getAddGame = () => {
-    return this.service.get("/addGame")
-    .then(response => response.data)
-  }
 
-  getAddConsoles = () => {
-    return this.service.get("/addCosoles")
-    .then(response => response.data)
-  }
+  addGame = (type, title, gender, year, imageUrl, description, price) => this.service.post(`/addGame`, {type, title, gender, year, imageUrl, description, price})
+  .then(response => {
+        return response.data
+})
 }
+
+  
 
 export default Service;

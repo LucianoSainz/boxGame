@@ -10,7 +10,7 @@ class AddConsoles extends React.Component {
             title: "",
             gender: "",
             year: "",
-            img: "",
+            imageUrl: "",
             description: "",
             price: "",
 
@@ -26,7 +26,7 @@ class AddConsoles extends React.Component {
         const title = this.state.title;
         const gender = this.state.gender;
         const year = this.state.year;
-        const img = this.state.img;
+        const imageUrl = this.state.imageUrl;
         const description = this.state.description;
         const price = this.state.price;
 
@@ -41,7 +41,7 @@ class AddConsoles extends React.Component {
                     title: "",
                     gender: "",
                     year: "",
-                    img: "",
+                    imageUrl: "",
                     description: "",
                     price: "",
 
@@ -56,7 +56,7 @@ class AddConsoles extends React.Component {
                     title: title,
                     gender: gender,
                     year: year,
-                    img: img,
+                    imageUrl: imageUrl,
                     description: description,
                     price: price,
                     error: true
@@ -91,9 +91,9 @@ class AddConsoles extends React.Component {
             year: event.target.value
         })
     }
-    handleImgInput = (event) => {
+    handleImageUrlInput = (event) => {
         this.setState({
-            img: event.target.value
+            imageUrl: event.target.files[0]
         })
     }
     handleDescriptionInput = (event) => {
@@ -125,8 +125,8 @@ class AddConsoles extends React.Component {
                     <label>Year:</label>
                     <input type="number" name="year" value={this.state.year} onChange={(e) => this.handleYearInput(e)} />
 
-                    <label>img:</label>
-                    <input type="file" name="img" value={this.state.img} onChange={(e) => this.handleImgInput(e)} />
+                    <label>imageUrl:</label>
+                    <input type="file" name="imageUrl" value={this.state.imageUrl} onChange={(e) => this.handleImageUrlInput(e)} />
 
                     <label>Desription:</label>
                     <input type="text" name="description" value={this.state.description} onChange={(e) => this.handleDescriptionInput(e)} />
