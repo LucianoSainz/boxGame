@@ -17,13 +17,13 @@ class GameDetail extends React.Component {
             <div>
                
             
-            <div className="">
+            <div className="gameTitle">
             {this.props.allGames
             .filter(game => game._id === this.props.match.params.id)
-            .map(game => (
-                <div>
-                <p>{game.imageUrl}</p>
-                <p>{game.type}</p>
+            .map(game => ( 
+                <div className="gameDet" >
+                {/* <p>{game.imageUrl}</p> */}
+                <h4>{game.type}</h4>
                 <p>{game.title}</p>
                 <p>{game.gender}</p>
                 <p>{game.year}</p>
@@ -35,7 +35,7 @@ class GameDetail extends React.Component {
                 
                 
                 </div>
-
+             
             )
 
             

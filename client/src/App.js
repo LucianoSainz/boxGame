@@ -102,10 +102,9 @@ class App extends Component {
             <main>
               
               <Switch>
-                {/* <Route exact path="/" render={()=><Home consoles={this.state.consoles} games={this.state.games} ></Home>} />  */}
                 <Route exact path="/home" render={()=><Home consoles={this.state.consoles} games={this.state.games} ></Home>} /> 
-                <Route exact path="/addGame" render={()=><AddGame></AddGame>} />  
-                <Route exact path="/addConsoles" render={()=><AddConsoles></AddConsoles>} />  
+                <Route exact path="/addGame" render={(props)=><AddGame user={this.state.loggedInUser} {...props}></AddGame>} /> 
+                <Route exact path="/addConsoles" render={(props)=><AddConsoles user={this.state.loggedInUser} {...props}></AddConsoles>} />  
                 <Route exact path="/profile" render={()=><Profile></Profile>} />          
                 <Route exact path="/game/:id" render={(props) =><GameDetail fetchGames={this.fetchGames} allGames={this.state.games} {...props}></GameDetail>} />
                 <Route exact path="/console/:id" render={(props) =><ConsolesDetails fetchConsoles={this.fetchConsoles} allConsoles={this.state.consoles} {...props}></ConsolesDetails>} />

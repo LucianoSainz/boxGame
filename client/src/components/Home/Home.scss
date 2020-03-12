@@ -27,8 +27,25 @@ h3{
 
 .games{
     background: #fff;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: stretch;
+	align-content: stretch;
 
 }
 }
+.info{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+
+.sect {
+    text-decoration: none;
+
+}
+}
 

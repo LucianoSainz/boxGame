@@ -1,4 +1,13 @@
 
+.row{
+      flex-direction: column;
+      display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .formular{
-   
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

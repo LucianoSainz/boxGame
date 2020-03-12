@@ -19,11 +19,13 @@ function Home(props) {
           <h3>Our best offers Games:</h3>
           
           {props.games.map(game => (
-            <Link to={"game/"+game._id}>
+            <Link className="sect" to={"game/"+game._id}>
              
-              <div>
-                  <img src={game.imageUrl} alt=""/>
-                  <h2>{game.title}</h2>
+              <div className="info">
+                  <img className="info"src={game.imageUrl} alt=""/>
+                  <div>
+                  <h4>{game.title}</h4>
+                  </div>
               </div>
             </Link>
             
@@ -37,9 +39,11 @@ function Home(props) {
         <h3>Our best deals on consoles:</h3>
           {props.consoles.map(consol => (
               <Link to={"consoles/"+consol._id}>
-                <div>
+                <div className="info">
                   <img src={consol.imageUrl} alt=""/>
+                  <div>
                   <h2>{consol.consoleModel}</h2>
+                  </div>
               </div>
               </Link>
           ))}

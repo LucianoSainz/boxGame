@@ -1,5 +1,4 @@
 import axios from 'axios';
-
 class Service {
   constructor() {
     this.service = axios.create({
@@ -7,30 +6,31 @@ class Service {
       withCredentials: true
     });
   }
-
   getGames = () => {
     return this.service.get("/games")
       .then(response => response.data)
   }
-
   getConsoles = () => {
     return this.service.get("/consoles")
       .then(response => response.data)
   }
-
-
-  handleUpload (theFile) {
+  handleUploadGames (theFile) {
      console.log('file in service: ', theFile)
     return this.service.post('/games/upload', theFile)
       .then(response =>  response.data)  
   }
-
-  handleUpload (theFile) {
+  addGame = (newGame, userId) => {
+    return this.service.post(`/games/add-game/${userId}`, newGame)
+    .then(response =>  response.data)  
+  }
+    handleUploadConsoles (theFile) {
     console.log('file in service: ', theFile)
    return this.service.post('/consoles/upload', theFile)
      .then(response =>  response.data)
 }
-
+  addConsoles = (newConsoles, userId) => {
+    return this.service.post(`/games/add-consoles/${userId}`, newConsoles)
+    .then(response => response.data)
+  }
 } 
-
 export default Service;

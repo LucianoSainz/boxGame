@@ -22,7 +22,7 @@ class ConsolesDetails extends React.Component {
             .map(consoles => (
                 <div>
                 <p>{consoles.imageUrl}</p>
-                <p>{consoles.consoleModel}</p>
+                <h1>{consoles.consoleModel}</h1>
                 <p>{consoles.controlsIncluded}</p>
                 <p>{consoles.memoryCapacity}</p>
                 <p>{consoles.gameIncluded}</p>
