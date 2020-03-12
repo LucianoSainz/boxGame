@@ -1,5 +1,6 @@
 import React from 'react';
 import Service from '../../services/Service';
+import "./addGame.scss"
 
 
 class addGame extends React.Component {
@@ -126,7 +127,7 @@ class addGame extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className="formular">
                 <form onSubmit={this.handleFormSubmit}>
                     <h5>add the game you want to sell</h5>
                     <label>Type:</label>

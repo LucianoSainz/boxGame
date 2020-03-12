@@ -15,7 +15,7 @@ class GameDetail extends React.Component {
     render () {
         return (
             <div>
-                <addGame></addGame>
+               
             
             <div>
             {this.props.allGames
