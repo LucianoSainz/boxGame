@@ -6,7 +6,7 @@ const Consoles = require("../models/Consoles");
 
 const consoles = [
   {
-    imageUrl:"",
+    imageUrl:"https://res.cloudinary.com/dlbu6iemy/image/upload/v1584021432/boxGame/ps4_ixxxtc.jpg",
     consoleModel:'PS4',
     controlsIncluded: 2,
     memoryCapacity:'1TB',
@@ -15,7 +15,7 @@ const consoles = [
     price: 300
   },
   {
-    imageUrl:"",
+    imageUrl:"https://res.cloudinary.com/dlbu6iemy/image/upload/v1584021442/boxGame/xbox_nkxccv.jpg",
     consoleModel:'Microsoft Xbox One',
     controlsIncluded: 1,
     memoryCapacity:'1TB',
@@ -24,7 +24,7 @@ const consoles = [
     price: 250
   },
   {
-    imageUrl:"",
+    imageUrl:"https://res.cloudinary.com/dlbu6iemy/image/upload/v1584021520/boxGame/nintendo_nes_uuz3rx.jpg",
     consoleModel:'Nintendo Nes',
     controlsIncluded: 2,
     memoryCapacity:'-',
@@ -33,16 +33,16 @@ const consoles = [
     price: 50
   },
   {
-    imageUrl:"",
+    imageUrl:"https://res.cloudinary.com/dlbu6iemy/image/upload/v1584021463/boxGame/gameboycolor_d31fam.jpg",
     consoleModel:'Game Boy Color',
     controlsIncluded: 0,
     memoryCapacity:'-',
     gameIncluded: 3,
-    description:' vendo Game Boy Color roja',
+    description:' vendo Game Boy Color',
     price: 100
   },
   {
-    imageUrl:"",
+    imageUrl:"https://res.cloudinary.com/dlbu6iemy/image/upload/v1584021463/boxGame/gameboycolor_d31fam.jpg",
     consoleModel:'PS I',
     controlsIncluded: 2,
     memoryCapacity:'Memory Card 128Mb',
@@ -51,7 +51,7 @@ const consoles = [
     price: 150
   },
   {
-    imageUrl:"",
+    imageUrl:"https://res.cloudinary.com/dlbu6iemy/image/upload/v1584021463/boxGame/Game-Boy_itk91k.jpg",
     consoleModel:'Game Boy',
     controlsIncluded: 0,
     memoryCapacity:'-',
@@ -60,7 +60,7 @@ const consoles = [
     price: 90
   },
   {
-    imageUrl:"",
+    imageUrl:"https://res.cloudinary.com/dlbu6iemy/image/upload/v1584021432/boxGame/tama_u6nble.jpg",
     consoleModel:'tamagotchi',
     controlsIncluded: 0,
     memoryCapacity:'-',
@@ -69,7 +69,7 @@ const consoles = [
     price: 20
   },
   {
-    imageUrl:"",
+    imageUrl:"https://res.cloudinary.com/dlbu6iemy/image/upload/v1584021432/boxGame/sega_gksjvm.jpg",
     consoleModel:'Sega Genesis',
     controlsIncluded: 2,
     memoryCapacity:'-',
@@ -78,7 +78,7 @@ const consoles = [
     price:60
   },
   {
-    imageUrl:"",
+    imageUrl:"https://res.cloudinary.com/dlbu6iemy/image/upload/v1584021432/boxGame/ps3_xz1imf.jpg",
     consoleModel:'PS3',
     controlsIncluded: 2,
     memoryCapacity:'-',
@@ -87,7 +87,7 @@ const consoles = [
     price:200
   },
  {
-  imageUrl:"",
+  imageUrl:"https://res.cloudinary.com/dlbu6iemy/image/upload/v1584021463/boxGame/gcolor_pk8w8v.jpg",
     consoleModel:'Game Boy Color',
     controlsIncluded: 0,
     memoryCapacity:'-',

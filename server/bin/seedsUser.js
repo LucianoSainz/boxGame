@@ -45,7 +45,7 @@ const consoles10 = new mongoose.mongo.ObjectID();
 
 const games = [
   {
-    imageUrl:"",
+    imageUrl:"https://res.cloudinary.com/dlbu6iemy/image/upload/v1584018319/boxGame/71srfb1tCXL._AC_SY355__ovsjsd.jpg",
     _id: game1,
     type: 'Juego Nintendo Switch',
     title: 'Luigi s Mansion 3',
@@ -55,9 +55,8 @@ const games = [
     price: 28.90
   },
   {
-    imageUrl:"",
+    imageUrl:"https://res.cloudinary.com/dlbu6iemy/image/upload/v1584018103/boxGame/spider_tddwu6.png",
     _id: game2,
-    img: "",
     type: 'Juego PS4',
     title: 'Juego PS4 Marvel´s Spider-Man',
     gender: 'Entretenimiento',
@@ -66,7 +65,7 @@ const games = [
     price: 30
   },
   {
-    imageUrl:"",
+    imageUrl:"https://res.cloudinary.com/dlbu6iemy/image/upload/v1584018103/boxGame/park_gwbnck.jpg",
     _id: game3,
     type: 'Pc',
     title: ' Xbox One South Park: La Vara de la Verdad',
@@ -76,7 +75,7 @@ const games = [
     price: 15.50
   },
   {
-    imageUrl:"",
+    imageUrl:"https://res.cloudinary.com/dlbu6iemy/image/upload/v1584018103/boxGame/ps_mzeffi.jpg",
     _id: game4,
     type: ' Juego PS3',
     title: ' PES 2011',
@@ -86,7 +85,7 @@ const games = [
     price: 17
   },
   {
-    imageUrl:"",
+    imageUrl:"https://res.cloudinary.com/dlbu6iemy/image/upload/v1584018103/boxGame/res_q4qhgp.jpg",
     _id: game5,
     type: ' Juego PS4',
     title: ' Resident Evil 3 Remake PS4',
@@ -96,7 +95,7 @@ const games = [
     price: 50.90
   },
   {
-    imageUrl:"",
+    imageUrl:"https://res.cloudinary.com/dlbu6iemy/image/upload/v1584018103/boxGame/Pokemon_uyrcwm.png",
     _id: game6,
     type: 'Game Boy Color',
     title: 'Pokemon especial pikachu edicion',
@@ -106,7 +105,7 @@ const games = [
     price: 60
   },
   {
-    imageUr:"",
+    imageUr:"https://res.cloudinary.com/dlbu6iemy/image/upload/v1584018103/boxGame/sonic_pvfbrz.jpg",
     _id: game7,
     type: 'Sega',
     title: 'Sonic the Hedgehog',
@@ -116,7 +115,7 @@ const games = [
     price: 30
   },
   {
-    imageUrl:"",
+    imageUrl:"https://res.cloudinary.com/dlbu6iemy/image/upload/v1584018103/boxGame/super_ubv49c.jpg",
     _id: game8,
     type: 'Family Game',
     title: 'Captain Tsubasa Vol. II: Super Striker',
@@ -126,7 +125,7 @@ const games = [
     price: 60
   },
   {
-    imageUrl:"",
+    imageUrl:"https://res.cloudinary.com/dlbu6iemy/image/upload/v1584018122/boxGame/ffs_yp22sr.jpg",
     _id: game9,
     type: 'PS I',
     title: 'Final Fantasy VII',
@@ -136,7 +135,7 @@ const games = [
     price: 40
   },
   {
-    imageUrl:"",
+    imageUrl:"https://res.cloudinary.com/dlbu6iemy/image/upload/v1584018122/boxGame/Doom_yd4iha.jpg",
     _id: game10,
     type: 'PC',
     title: 'Doom',
@@ -146,7 +145,7 @@ const games = [
     price: 50
   },
   {
-    imageUrl:"",
+    imageUrl:"https://res.cloudinary.com/dlbu6iemy/image/upload/v1584018122/boxGame/driver_gtqyip.jpg",
     _id: game11,
     type: 'PS I',
     title: 'Driver',
@@ -156,7 +155,7 @@ const games = [
     price: 15
   },
   {
-    imageUrl:"",
+    imageUrl:"https://res.cloudinary.com/dlbu6iemy/image/upload/v1584018122/boxGame/Donkey_Kong_ujidp4.jpg",
     _id: game12,
     type: 'Game Boy',
     title: 'Donkey Kong Land 3',
@@ -166,7 +165,7 @@ const games = [
     price: 20
   },
   {
-     imageUrl:"",
+     imageUrl:"https://res.cloudinary.com/dlbu6iemy/image/upload/v1584018103/boxGame/Super_Mario_yq7ff1.png",
     _id: game13,
     type: 'Nintendo Nes',
     title: 'Super Mario Bros',
@@ -179,7 +178,7 @@ const games = [
 
 const consoles = [
   {
-    imageUrl:"",
+    imageUrl:"https://res.cloudinary.com/dlbu6iemy/image/upload/v1584021432/boxGame/ps4_ixxxtc.jpg",
     _id: consoles1,
     consoleModel: 'PS4',
     controlsIncluded: 2,
@@ -189,7 +188,7 @@ const consoles = [
     price: 300
   },
   {
-    imageUrl:"",
+    imageUrl:"https://res.cloudinary.com/dlbu6iemy/image/upload/v1584021442/boxGame/xbox_nkxccv.jpg",
     _id: consoles2,
     consoleModel: 'Microsoft Xbox One',
     controlsIncluded: 1,
@@ -199,7 +198,7 @@ const consoles = [
     price: 250
   },
   {
-    imageUrl:"",
+    imageUrl:"https://res.cloudinary.com/dlbu6iemy/image/upload/v1584021520/boxGame/nintendo_nes_uuz3rx.jpg",
     _id: consoles3,
     consoleModel: 'Nintendo Nes',
     controlsIncluded: 2,
@@ -209,17 +208,17 @@ const consoles = [
     price: 50
   },
   {
-    imageUrl:"",
+    imageUrl:"https://res.cloudinary.com/dlbu6iemy/image/upload/v1584021463/boxGame/gameboycolor_d31fam.jpg",
     _id: consoles4,
     consoleModel: 'Game Boy Color',
     controlsIncluded: 0,
     memoryCapacity: '-',
     gameIncluded: 3,
-    description: ' vendo Game Boy Color roja',
+    description: ' vendo Game Boy Color',
     price: 100
   },
   {
-    imageUrl:"",
+    imageUrl:"https://res.cloudinary.com/dlbu6iemy/image/upload/v1584021432/boxGame/ps1_qsxqeo.jpg",
     _id: consoles5,
     consoleModel: 'PS I',
     controlsIncluded: 2,
@@ -229,7 +228,7 @@ const consoles = [
     price: 150
   },
   {
-    imageUrl:"",
+    imageUrl:"https://res.cloudinary.com/dlbu6iemy/image/upload/v1584021463/boxGame/Game-Boy_itk91k.jpg",
     _id: consoles6,
     consoleModel: 'Game Boy',
     controlsIncluded: 0,
@@ -239,7 +238,7 @@ const consoles = [
     price: 90
   },
   {
-    imageUrl:"",
+    imageUrl:"https://res.cloudinary.com/dlbu6iemy/image/upload/v1584021432/boxGame/tama_u6nble.jpg",
     _id: consoles7,
     consoleModel: 'tamagotchi',
     controlsIncluded: 0,
@@ -249,7 +248,7 @@ const consoles = [
     price: 20
   },
   {
-    imageUrl:"",
+    imageUrl:"https://res.cloudinary.com/dlbu6iemy/image/upload/v1584021432/boxGame/sega_gksjvm.jpg",
     _id: consoles8,
     consoleModel: 'Sega Genesis',
     controlsIncluded: 2,
@@ -259,7 +258,7 @@ const consoles = [
     price: 60
   },
   {
-    imageUrl:"",
+    imageUrl:"https://res.cloudinary.com/dlbu6iemy/image/upload/v1584021432/boxGame/ps3_xz1imf.jpg",
     _id: consoles9,
     consoleModel: 'PS3',
     controlsIncluded: 2,
@@ -269,7 +268,7 @@ const consoles = [
     price: 200
   },
   {
-    imageUrl: "",
+    imageUrl: "https://res.cloudinary.com/dlbu6iemy/image/upload/v1584021463/boxGame/gcolor_pk8w8v.jpg",
     _id: consoles10,
     consoleModel: 'Game Boy Color',
     controlsIncluded: 0,

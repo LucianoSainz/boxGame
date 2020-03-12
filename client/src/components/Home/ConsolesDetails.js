@@ -15,15 +15,25 @@ class ConsolesDetails extends React.Component {
     render () {
         return (
             <div>
+
+            <div className="">
             {this.props.allConsoles
             .filter(consoles => consoles._id === this.props.match.params.id)
             .map(consoles => (
-                consoles.consoleModel
-
+                <div>
+                <p>{consoles.imageUrl}</p>
+                <p>{consoles.consoleModel}</p>
+                <p>{consoles.controlsIncluded}</p>
+                <p>{consoles.memoryCapacity}</p>
+                <p>{consoles.gameIncluded}</p>
+                <p>{consoles.description}</p>
+                <p>{consoles.price } €</p>
+                </div>
             )
 
             
             )}
+            </div>
             </div>
         )
     }

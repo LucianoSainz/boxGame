@@ -6,7 +6,7 @@ const Game = require("../models/Game");
 
 const game = [
   {
-    imageUrl:"",
+    imageUrl:"https://res.cloudinary.com/dlbu6iemy/image/upload/v1584018319/boxGame/71srfb1tCXL._AC_SY355__ovsjsd.jpg",
     type:'Juego Nintendo Switch',
     title:'Luigi s Mansion 3',
     gender: 'adventure',
@@ -15,7 +15,7 @@ const game = [
     price:28.90
   },
   {
-    imageUrl:"",
+    imageUrl:"https://res.cloudinary.com/dlbu6iemy/image/upload/v1584014319/boxGame/spider_is5jnk.png",
     type:'Juego PS4',
     title:'Juego PS4 Marvel´s Spider-Man',
     gender: 'Entretenimiento',
@@ -24,7 +24,7 @@ const game = [
     price:30
   },
   {
-    imageUrl:"",
+    imageUrl:"https://res.cloudinary.com/dlbu6iemy/image/upload/v1584018103/boxGame/park_gwbnck.jpg",
     type:'Pc',
     title:' Xbox One South Park: La Vara de la Verdad',
     gender: ' Aventura',
@@ -33,7 +33,7 @@ const game = [
     price:15.50   
   },
   {
-    imageUrl:"",
+    imageUrl:"https://res.cloudinary.com/dlbu6iemy/image/upload/v1584018103/boxGame/ps_mzeffi.jpg",
     type:' Juego PS3',
     title:' PES 2011',
     gender: ' Deportes',
@@ -42,7 +42,7 @@ const game = [
     price:17  
   },
   {
-    imageUrl:"",
+    imageUrl:"https://res.cloudinary.com/dlbu6iemy/image/upload/v1584018103/boxGame/res_q4qhgp.jpg",
     type:' Juego PS4',
     title:' Resident Evil 3 Remake PS4',
     gender: ' Entretenimiento',
@@ -51,7 +51,7 @@ const game = [
     price:50.90 
   },
   {
-    imageUrl:"",
+    imageUrl:"https://res.cloudinary.com/dlbu6iemy/image/upload/v1584018103/boxGame/Pokemon_uyrcwm.png",
     type:'Game Boy Color',
     title:'Pokemon especial pikachu edicion',
     gender: ' Entretenimiento',
@@ -60,7 +60,7 @@ const game = [
     price:60
   },
   {
-    imageUrl:"",
+    imageUrl:"https://res.cloudinary.com/dlbu6iemy/image/upload/v1584018103/boxGame/sonic_pvfbrz.jpg",
     type:'Sega',
     title:'Sonic the Hedgehog',
     gender:'Videojuego de plataformas',
@@ -69,7 +69,7 @@ const game = [
     price:30
   },
   {
-    imageUrl:"",
+    imageUrl:"https://res.cloudinary.com/dlbu6iemy/image/upload/v1584018103/boxGame/super_ubv49c.jpg",
     type:'Family Game',
     title:'Captain Tsubasa Vol. II: Super Striker',
     gender:'football',
@@ -78,7 +78,7 @@ const game = [
     price:60
   },
   {
-    imageUrl:"",
+    imageUrl:"https://res.cloudinary.com/dlbu6iemy/image/upload/v1584018122/boxGame/ffs_yp22sr.jpg",
     type:'PS I',
     title:'Final Fantasy VII',
     gender:'Entretenimiento',
@@ -87,7 +87,7 @@ const game = [
     price:40
   },
   {
-    imageUrl:"",
+    imageUrl:"https://res.cloudinary.com/dlbu6iemy/image/upload/v1584018122/boxGame/Doom_yd4iha.jpg",
     type:'PC',
     title:'Doom',
     gender:'Entretenimiento',
@@ -96,7 +96,7 @@ const game = [
     price:50
   },
   {
-    imageUrl:"",
+    imageUrl:"https://res.cloudinary.com/dlbu6iemy/image/upload/v1584018122/boxGame/driver_gtqyip.jpg",
     type:'PS I',
     title:'Driver',
     gender:'Carreras',
@@ -105,7 +105,7 @@ const game = [
     price:15
   },
   {
-    imageUrl:"",
+    imageUrl:"https://res.cloudinary.com/dlbu6iemy/image/upload/v1584018122/boxGame/Donkey_Kong_ujidp4.jpg",
     type:'Game Boy',
     title:'Donkey Kong Land 3',
     gender:'Entretenimiento',
@@ -114,7 +114,7 @@ const game = [
     price:20
   },
   {
-    imageUrl:"",
+    imageUrl:"https://res.cloudinary.com/dlbu6iemy/image/upload/v1584018103/boxGame/Super_Mario_yq7ff1.png",
     type:'Nintendo Nes',
     title:'Super Mario Bros',
     gender:'Plataformas',

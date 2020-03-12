@@ -10,7 +10,7 @@ class AddConsoles extends React.Component {
             controlIncluded: "",
             memoryCapacity: "",
             gameIncluded: "",
-            img: "",
+            imageUrl: "",
             description: "",
             price: "",
 
@@ -26,7 +26,7 @@ class AddConsoles extends React.Component {
         const controlIncluded = this.state.controlIncluded;
         const memoryCapacity = this.state.memoryCapacity;
         const gameIncluded = this.state.gameIncluded;
-        const img = this.state.img;
+        const imageUrl = this.state.imageUrl;
         const description = this.state.description;
         const price = this.state.price;
 
@@ -90,11 +90,23 @@ class AddConsoles extends React.Component {
             year: event.target.value
         })
     }
-    handleImgInput = (event) => {
-        this.setState({
-            img: event.target.value
-        })
+   
+    
+    handleFileUpload = e => {
+        console.log("The file to be uploaded is: ", e.target.files[0]);
+        const uploadData = new FormData();
+
+        uploadData.append("imageUrl", e.target.files[0]);
+        this.service.handleUpload(uploadData)
+            .then(response => {
+             console.log(response)
+                this.setState({ imageUrl: response.secure_url }, ()=> console.log(this.state));
+            })
+            .catch(err => {
+                console.log("Error while uploading the file: ", err);
+            });
     }
+
     handleDescriptionInput = (event) => {
         this.setState({
             description: event.target.value
@@ -124,8 +136,8 @@ class AddConsoles extends React.Component {
                     <label>GameIncluded:</label>
                     <input type="number" name="gameIncluded" value={this.state.gameIncluded} onChange={(e) => this.handleGameIncludedInput(e)} />
 
-                    <label>img:</label>
-                    <input type="file" name="img" value={this.state.img} onChange={(e) => this.handleImgInput(e)} />
+                    <label>image:</label>
+                    <input type="file" name="imageUrl"  onChange={(e) => this.handleFileUpload(e)} />
 
                     <label>Desription:</label>
                     <input type="text" name="description" value={this.state.description} onChange={(e) => this.handleDescriptionInput(e)} />

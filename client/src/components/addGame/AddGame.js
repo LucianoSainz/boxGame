@@ -142,8 +142,8 @@ class addGame extends React.Component {
                     <label>Year:</label>
                     <input type="number" name="year" value={this.state.year} onChange={(e) => this.handleYearInput(e)} />
 
-                    <label>imageUrl:</label>
-                    <input type="file" name="imageUrl" value={this.state.imageUrl} onChange={(e) => this.handleFileUpload(e)} />
+                    <label>image:</label>
+                    <input type="file" name="imageUrl"  onChange={(e) => this.handleFileUpload(e)} />
 
                     <label>Desription:</label>
                     <input type="text" name="description" value={this.state.description} onChange={(e) => this.handleDescriptionInput(e)} />

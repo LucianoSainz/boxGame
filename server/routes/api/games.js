@@ -36,7 +36,6 @@ router.post('/upload', uploader.single("imageUrl"), (req, res, next) => {
 
 
 
-
 router.delete("/:id", (req, res, next) => {
     games.findByIdAndDelete(req.params.id).then(deletedGame =>
        res.json({ deleted: true, deletedGame })

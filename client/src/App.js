@@ -11,6 +11,7 @@ import Service from './services/Service';
 import AuthService from "./services/AuthService";
 import AddGame from "./components/addGame/AddGame";
 import AddConsoles from "./components/addConsoles/AddConsoles";
+import Profile from "./components/Profile/Profile"
 
 
 class App extends Component {
@@ -104,7 +105,8 @@ class App extends Component {
                 {/* <Route exact path="/" render={()=><Home consoles={this.state.consoles} games={this.state.games} ></Home>} />  */}
                 <Route exact path="/home" render={()=><Home consoles={this.state.consoles} games={this.state.games} ></Home>} /> 
                 <Route exact path="/addGame" render={()=><AddGame></AddGame>} />  
-                <Route exact path="/addConsoles" render={()=><AddConsoles></AddConsoles>} />            
+                <Route exact path="/addConsoles" render={()=><AddConsoles></AddConsoles>} />  
+                <Route exact path="/profile" render={()=><Profile></Profile>} />          
                 <Route exact path="/game/:id" render={(props) =><GameDetail fetchGames={this.fetchGames} allGames={this.state.games} {...props}></GameDetail>} />
                 <Route exact path="/console/:id" render={(props) =><ConsolesDetails fetchConsoles={this.fetchConsoles} allConsoles={this.state.consoles} {...props}></ConsolesDetails>} />
               </Switch> 

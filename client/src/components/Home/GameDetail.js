@@ -17,12 +17,24 @@ class GameDetail extends React.Component {
             <div>
                
             
-            <div>
+            <div className="">
             {this.props.allGames
             .filter(game => game._id === this.props.match.params.id)
             .map(game => (
-                game.title
+                <div>
+                <p>{game.imageUrl}</p>
+                <p>{game.type}</p>
+                <p>{game.title}</p>
+                <p>{game.gender}</p>
+                <p>{game.year}</p>
+                <p>{game.description}</p>
+                <p>{game.price } €</p>
                 
+                
+                
+                
+                
+                </div>
 
             )
 

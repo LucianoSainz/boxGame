@@ -22,12 +22,15 @@ class Service {
   handleUpload (theFile) {
      console.log('file in service: ', theFile)
     return this.service.post('/games/upload', theFile)
-      .then(response =>  response.data)
-      
-    
+      .then(response =>  response.data)  
   }
+
+  handleUpload (theFile) {
+    console.log('file in service: ', theFile)
+   return this.service.post('/consoles/upload', theFile)
+     .then(response =>  response.data)
 }
 
-  
+} 
 
 export default Service;
