@@ -29,7 +29,7 @@ class Service {
      .then(response =>  response.data)
 }
   addConsoles = (newConsoles, userId) => {
-    return this.service.post(`/games/add-consoles/${userId}`, newConsoles)
+    return this.service.post(`/consoles/add-consoles/${userId}`, newConsoles)
     .then(response => response.data)
   }
 } 

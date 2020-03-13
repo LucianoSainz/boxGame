@@ -42,7 +42,7 @@ function Home(props) {
                 <div className="info">
                   <img src={consol.imageUrl} alt=""/>
                   <div>
-                  <h2>{consol.consoleModel}</h2>
+                  <h4>{consol.consoleModel}</h4>
                   </div>
               </div>
               </Link>

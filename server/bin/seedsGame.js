@@ -12,7 +12,7 @@ const game = [
     gender: 'adventure',
     year: 2019,
     description:'vendo juego la Mansion de Luigi s 3 en buen estado',
-    contact:567-7689,
+    contact:5677689,
     price:28.90
   },
   {
@@ -22,7 +22,7 @@ const game = [
     gender: 'Entretenimiento',
     year: 2019,
     description:'I sell a new game because they gave it to me and I already had it.',
-    contact:0987-0945,
+    contact:09870945,
     price:30
   },
   {
@@ -32,7 +32,7 @@ const game = [
     gender: ' Aventura',
     year: 2018,
     description:'juego en buen estado para pasar tardes divetidas con los colegas',
-    contact:6537-8729,
+    contact:65378729,
     price:15.50   
   },
   {
@@ -42,7 +42,7 @@ const game = [
     gender: ' Deportes',
     year: 2011,
     description:'Vendo gioco per ps3 in buone condizioni, meglio vedere',
-    contact:0567-9108,
+    contact:05679108,
     price:17  
   },
   {
@@ -52,7 +52,7 @@ const game = [
     gender: ' Entretenimiento',
     year: 2019,
     description:'vendo el mejor juego de Resident Evil de todos los tiempos, buen estado , caja original',
-    contact:8763-9867,
+    contact:87639867,
     price:50.90 
   },
   {
@@ -62,7 +62,7 @@ const game = [
     gender: ' Entretenimiento',
     year: 1998,
     description:'estoy buscando este juego retro de pokemon si alguin lo tiene contactar',
-    contact:6148-4529,
+    contact:61484529,
     price:60
   },
   {
@@ -72,7 +72,7 @@ const game = [
     gender:'Videojuego de plataformas',
     year: 1991,
     description:'',
-    contact:6294-8451,
+    contact:62948451,
     price:30
   },
   {
@@ -82,7 +82,7 @@ const game = [
     gender:'football',
     year: 1990,
     description:'I have been looking for this family range console game for a long time now I am a collector',
-    contact:6907-5721,
+    contact:69075721,
     price:60
   },
   {
@@ -92,7 +92,7 @@ const game = [
     gender:'Entretenimiento',
     year: 1997,
     description:'I sell final game fantasie in good condition, short time of use',
-    contact:9506-4217,
+    contact:95064217,
     price:40
   },
   {
@@ -102,7 +102,7 @@ const game = [
     gender:'Entretenimiento',
     year: 1993,
     description:'estoy buscando el juego de mi infancia el Doom para remorar las tardes despues del colegio.',
-    contact:9515-278,
+    contact:9515278,
     price:50
   },
   {
@@ -112,7 +112,7 @@ const game = [
     gender:'Carreras',
     year: 1999,
     description:'vendo el mejor juego de carreras de PS I',
-    contact:639-646,
+    contact:639646,
     price:15
   },
   {
@@ -122,7 +122,7 @@ const game = [
     gender:'Entretenimiento',
     year: 1997,
     description:'compro juego DONKEY KONG en buen estado',
-    contact:678-359,
+    contact:678359,
     price:20
   },
   {
@@ -132,7 +132,7 @@ const game = [
     gender:'Plataformas',
     year: 1987,
     description:'vendo super mario bros',
-    contact:658-5214,
+    contact:6585214,
     price:17
   }
 ];

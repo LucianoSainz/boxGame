@@ -52,7 +52,7 @@ const games = [
     gender: 'adventure',
     year: 2019,
     description: 'vendo juego la Mansion de Luigi s 3 en buen estado',
-    contact:567-7689,
+    contact:5677689,
     price: 28.90
   },
   {
@@ -63,7 +63,7 @@ const games = [
     gender: 'Entretenimiento',
     year: 2019,
     description: 'I sell a new game because they gave it to me and I already had it.',
-    contact:0987-0945,
+    contact:09870945,
     price: 30
   },
   {
@@ -74,7 +74,7 @@ const games = [
     gender: ' Aventura',
     year: 2018,
     description: 'juego en buen estado para pasar tardes divetidas con los colegas',
-    contact:6537-8729,
+    contact:65378729,
     price: 15.50
   },
   {
@@ -85,7 +85,7 @@ const games = [
     gender: ' Deportes',
     year: 2011,
     description: 'Vendo gioco per ps3 in buone condizioni, meglio vedere',
-    contact:0567-9108,
+    contact:05673402,
     price: 17
   },
   {
@@ -96,7 +96,7 @@ const games = [
     gender: ' Entretenimiento',
     year: 2019,
     description: 'vendo el mejor juego de Resident Evil de todos los tiempos, buen estado , caja original',
-    contact:8763-9867,
+    contact:87639867,
     price: 50.90
   },
   {
@@ -107,7 +107,7 @@ const games = [
     gender: ' Entretenimiento',
     year: 1998,
     description: 'estoy buscando este juego retro de pokemon si alguin lo tiene contactar',
-    contact:6148-4529,
+    contact:61484529,
     price: 60
   },
   {
@@ -118,7 +118,7 @@ const games = [
     gender: 'Videojuego de plataformas',
     year: 1991,
     description: '',
-    contact:6294-8451,
+    contact:62948451,
     price: 30
   },
   {
@@ -129,7 +129,7 @@ const games = [
     gender: 'football',
     year: 1990,
     description: 'I have been looking for this family range console game for a long time now I am a collector',
-    contact:6907-5721,
+    contact:69075721,
     price: 60
   },
   {
@@ -140,7 +140,7 @@ const games = [
     gender: 'Entretenimiento',
     year: 1997,
     description: 'I sell final game fantasie in good condition, short time of use',
-    contact:9506-4217,
+    contact:95064217,
     price: 40
   },
   {
@@ -151,7 +151,7 @@ const games = [
     gender: 'Entretenimiento',
     year: 1993,
     description: 'estoy buscando el juego de mi infancia el Doom para remorar las tardes despues del colegio.',
-    contact:9515-278,
+    contact:9515278,
     price: 50
   },
   {
@@ -162,7 +162,7 @@ const games = [
     gender: 'Carreras',
     year: 1999,
     description: 'vendo el mejor juego de carreras de PS I',
-    contact:639-646,
+    contact:639646,
     price: 15
   },
   {
@@ -173,7 +173,7 @@ const games = [
     gender: 'Entretenimiento',
     year: 1997,
     description: 'compro juego DONKEY KONG en buen estado',
-    contact:678-359,
+    contact:678359,
     price: 20
   },
   {
@@ -184,7 +184,7 @@ const games = [
     gender: 'Plataformas',
     year: 1987,
     description: 'vendo super mario bros',
-    contact:6583-5214,
+    contact:65835214,
     price: 17
   }
 ]
@@ -198,7 +198,7 @@ const consoles = [
     memoryCapacity: '1TB',
     gameIncluded: 2,
     description: 'se vende PS4 color negra con los juegos Need for Speed heat y Matterfall, todo en buen estado mejor ver y probar',
-    contact:567-7219,
+    contact:5677219,
     price: 300
   },
   {
@@ -209,7 +209,7 @@ const consoles = [
     memoryCapacity: '1TB',
     gameIncluded: 1,
     description: 'se vende Xbox One color blanca con poco uso',
-    contact:797-7469,
+    contact:7977469,
     price: 250
   },
   {
@@ -220,7 +220,7 @@ const consoles = [
     memoryCapacity: '-',
     gameIncluded: 3,
     description: 'se vende Nintendo Nes bien conservado con los juegos Mario bros3, Exite Bike y Galaxian',
-    contact:2787-7469,
+    contact:27877469,
     price: 50
   },
   {
@@ -231,7 +231,7 @@ const consoles = [
     memoryCapacity: '-',
     gameIncluded: 3,
     description: ' vendo Game Boy Color',
-    contact:60237-2159,
+    contact:602372159,
     price: 100
   },
   {
@@ -242,7 +242,7 @@ const consoles = [
     memoryCapacity: 'Memory Card 128Mb',
     gameIncluded: 3,
     description: 'PS I color gris con los juegos Metal Gear,Crash Racing y Tom Raider',
-    contact:95154-2159,
+    contact:951542159,
     price: 150
   },
   {
@@ -253,7 +253,7 @@ const consoles = [
     memoryCapacity: '-',
     gameIncluded: 1,
     description: 'includes the game The Legend of Zelda',
-    contact:69347-2159,
+    contact:693472159,
     price: 90
   },
   {
@@ -264,7 +264,7 @@ const consoles = [
     memoryCapacity: '-',
     gameIncluded: 1,
     description: 'In vendita tamagotchi in buone condizioni',
-    contact:46687-2159,
+    contact:466872159,
     price: 20
   },
   {
@@ -275,7 +275,7 @@ const consoles = [
     memoryCapacity: '-',
     gameIncluded: 3,
     description: 'incluye juegos Sonic the Hedgehog 2,Mortal Kombat 3 y Streets of Rage 2',
-    contact:77637-2159,
+    contact:776372159,
     price: 60
   },
   {
@@ -286,7 +286,7 @@ const consoles = [
     memoryCapacity: '-',
     gameIncluded: 3,
     description: 'incluye juegos Sonic the Hedgehog 2,Mortal Kombat 3 y Streets of Rage 2',
-    contact:5679-28959,
+    contact:567928959,
     price: 200
   },
   {
@@ -297,7 +297,7 @@ const consoles = [
     memoryCapacity: '-',
     gameIncluded: 0,
     description: 'compro game color',
-    contact:56737-2159,
+    contact:567372159,
     price: 90
   }
 ]

@@ -43,13 +43,5 @@ router.post('/add-game/:userId', (req, res, next) => {
     .then(response => res.json(response))
   );
 })
-router.post('/add-consoles/:userId', (req, res, next) => {
-  Consoles.create(req.body).then(consolesCreated =>
-    User.findByIdAndUpdate(req.params.userId, {
-      $push: {consoles: req.body._id}
-    })
-    .then(response => res.json(response))
-  );
-})
 
 module.exports = router;
