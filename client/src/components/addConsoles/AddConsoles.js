@@ -14,6 +14,7 @@ class AddConsoles extends React.Component {
             imageUrl: "",
             description: "",
             price: "",
+            contact: ''
 
         };
         this.service = new Service();
@@ -30,6 +31,7 @@ class AddConsoles extends React.Component {
                     imageUrl: "",
                     description: "",
                     price: "",
+                    contact: '',
                 }, () => this.props.history.push('/home'))
             })
             .catch(error => {
@@ -37,12 +39,6 @@ class AddConsoles extends React.Component {
                 console.log(error)
             })
     };
-
-
-    // handleChange = (event) => {
-    //     const { name, value } = event.target;
-    //     this.setState({ [name]: value });
-    // }
 
 
     handleConsoleModelInput = (event) => {
@@ -94,82 +90,98 @@ class AddConsoles extends React.Component {
         })
     }
 
+    handleContactInput = event => {
+        this.setState({
+            contact: event.target.value
+        });
+    }
+
 
     render() {
         return (
             <div>
                 <div className='formular'>
-                <form onSubmit={this.handleFormSubmit}>
-                    <h4 className="title">Add the console you want to sell</h4>
+                    <form onSubmit={this.handleFormSubmit}>
+                        <h4 className="title">Add the console you want to sell</h4>
 
-                    <div>
-                    <label>ConsoleModel:</label>
-                    <input
-                        type='text'
-                        name='consoleModel'
-                        value={this.state.consoleModel}
-                        onChange={(e) => this.handleConsoleModelInput(e)}
-                    />
-                    </div>
-                    <div>
-                    <label>ControlIncluded:</label>
-                    <input
-                        type='text'
-                        name='controlIncluded'
-                        value={this.state.controlIncluded}
-                        onChange={(e) => this.handleControlIncludedInput(e)}
-                    />
-                    </div>
-                    <div>
-                    <label>MemoryCapacity:</label>
-                    <input
-                        type='number'
-                        name='MemoryCapacity'
-                        value={this.state.memoryCapacity}
-                        onChange={e => this.handleMemoryCapacityInput(e)}
-                    />
-                    </div>
-                    <div>
-                    <label>GameIncluded:</label>
-                    <input
-                        type='text'
-                        name='GameIncluded'
-                        value={this.state.gameIncluded}
-                        onChange={e => this.handleGameIncludedInput(e)}
-                    />
-                    </div>
-                    <div>
-                    <label>Image:</label>
-                    <input
-                        type="file"
-                        name="imageUrl"
-                        onChange={e => this.handleFileUpload(e)}
-                    />
-                    </div>
-                    <div>
-                    <label>Desription:</label>
-                    <textarea
-                        type="text"
-                        name="description"
-                        value={this.state.description}
-                        onChange={e => this.handleDescriptionInput(e)}
-                    />
-                    </div>
-                    <div>
-                    <label>Price:</label>
-                    <input
-                        type="number"
-                        name="price"
-                        value={this.state.price}
-                        onChange={e => this.handlePriceInput(e)}
-                    />
-                    </div>
-                    <div className="btn">
-                    <input type="submit" value="Submit" />
-                    </div>
-                </form>
+                        <div>
+                            <label>ConsoleModel:</label>
+                            <input
+                                type='text'
+                                name='consoleModel'
+                                value={this.state.consoleModel}
+                                onChange={(e) => this.handleConsoleModelInput(e)}
+                            />
+                        </div>
+                        <div>
+                            <label>ControlIncluded:</label>
+                            <input
+                                type='text'
+                                name='controlIncluded'
+                                value={this.state.controlIncluded}
+                                onChange={(e) => this.handleControlIncludedInput(e)}
+                            />
+                        </div>
+                        <div>
+                            <label>MemoryCapacity:</label>
+                            <input
+                                type='number'
+                                name='MemoryCapacity'
+                                value={this.state.memoryCapacity}
+                                onChange={e => this.handleMemoryCapacityInput(e)}
+                            />
+                        </div>
+                        <div>
+                            <label>GameIncluded:</label>
+                            <input
+                                type='text'
+                                name='GameIncluded'
+                                value={this.state.gameIncluded}
+                                onChange={e => this.handleGameIncludedInput(e)}
+                            />
+                        </div>
+                        <div>
+                            <label>Image:</label>
+                            <input
+                                type="file"
+                                name="imageUrl"
+                                onChange={e => this.handleFileUpload(e)}
+                            />
+                        </div>
+                        <div>
+                            <label>Desription:</label>
+                            <textarea
+                                type="text"
+                                name="description"
+                                value={this.state.description}
+                                onChange={e => this.handleDescriptionInput(e)}
+                            />
+                        </div>
+                        <div>
+                            <label>Cotact:</label>
+                            <input
+                                type='number'
+                                name='contact'
+                                value={this.state.contact}
+                                onChange={e => this.handleContactInput(e)}
+                            />
+                        </div>
+
+                        <div>
+                            <label>Price:</label>
+                            <input
+                                type="number"
+                                name="price"
+                                value={this.state.price}
+                                onChange={e => this.handlePriceInput(e)}
+                            />
+                        </div>
+                        <div className="btn">
+                            <input type="submit" value="Submit" />
+                        </div>
+                    </form>
+                </div>
             </div>
-          </div>
         )
     }
 }

@@ -103,12 +103,12 @@ class App extends Component {
             <main>
               
               <Switch>
-                <Route exact path="/home" render={()=><Home consoles={this.state.consoles} games={this.state.games} ></Home>} /> 
+                <Route exact path="/" render={()=><Home consoles={this.state.consoles} games={this.state.games} ></Home>} /> 
                 <Route exact path="/addGame" render={(props)=><AddGame user={this.state.loggedInUser} {...props}></AddGame>} /> 
                 <Route exact path="/addConsoles" render={(props)=><AddConsoles user={this.state.loggedInUser} {...props}></AddConsoles>} />  
-                <Route exact path="/profile" render={(props)=><Profile user={this.state.loggedInUser} {...props}></Profile>} />          
+                {/* <Route exact path="/profile" render={(props)=><Profile user={this.state.loggedInUser} {...props}></Profile>} />           */}
                 <Route exact path="/game/:id" render={(props) =><GameDetail fetchGames={this.fetchGames} allGames={this.state.games} {...props}></GameDetail>} />
-                <Route exact path="/console/:id" render={(props) =><ConsolesDetails fetchConsoles={this.fetchConsoles} allConsoles={this.state.consoles} {...props}></ConsolesDetails>} />
+                <Route exact path="/consoles/:id" render={(props) =><ConsolesDetails fetchConsoles={this.fetchConsoles} allConsoles={this.state.consoles} {...props}></ConsolesDetails>} />
               </Switch> 
               <Footer></Footer>
             </main>
@@ -127,9 +127,11 @@ class App extends Component {
             </header>
             <main>
               <Switch>
-                <Route exact path="/home" render={()=><Home consoles={this.state.consoles} games={this.state.games}></Home>} />              
+                <Route exact path="/" render={()=><Home consoles={this.state.consoles} games={this.state.games}></Home>} />              
                 <Route exact path="/login" render={() => <Login getUser={this.getUser} />} />
                 <Route exact path="/signup" render={() => <Signup getUser={this.getUser} />} />
+                <Route exact path="/game/:id" render={(props) =><Redirect to = "/login"/>} />
+                <Route exact path="/consoles/:id" render={(props) =><Redirect to ="/login"/>} />
               </Switch>
               <Footer></Footer>
               
