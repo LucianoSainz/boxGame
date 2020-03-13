@@ -14,6 +14,8 @@ router.get('/', (req, res, next) => {
   .catch (err => next(err))
   console.log('error');
 })
+
+
 router.post('/upload', uploader.single("imageUrl"), (req, res, next) => {
   console.log('file is: ', req.file)
  if (!req.file) {
