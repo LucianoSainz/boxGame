@@ -103,7 +103,7 @@ class App extends Component {
             <main>
               
               <Switch>
-                <Route exact path="/" render={()=><Home consoles={this.state.consoles} games={this.state.games} ></Home>} /> 
+                <Route exact path="/home" render={()=><Home consoles={this.state.consoles} games={this.state.games} ></Home>} /> 
                 <Route exact path="/addGame" render={(props)=><AddGame user={this.state.loggedInUser} {...props}></AddGame>} /> 
                 <Route exact path="/addConsoles" render={(props)=><AddConsoles user={this.state.loggedInUser} {...props}></AddConsoles>} />  
                 {/* <Route exact path="/profile" render={(props)=><Profile user={this.state.loggedInUser} {...props}></Profile>} />           */}
@@ -127,7 +127,7 @@ class App extends Component {
             </header>
             <main>
               <Switch>
-                <Route exact path="/" render={()=><Home consoles={this.state.consoles} games={this.state.games}></Home>} />              
+                <Route exact path="/home" render={()=><Home consoles={this.state.consoles} games={this.state.games}></Home>} />              
                 <Route exact path="/login" render={() => <Login getUser={this.getUser} />} />
                 <Route exact path="/signup" render={() => <Signup getUser={this.getUser} />} />
                 <Route exact path="/game/:id" render={(props) =><Redirect to = "/login"/>} />
