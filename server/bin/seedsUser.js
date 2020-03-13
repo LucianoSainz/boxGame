@@ -52,6 +52,7 @@ const games = [
     gender: 'adventure',
     year: 2019,
     description: 'vendo juego la Mansion de Luigi s 3 en buen estado',
+    contact:567-7689,
     price: 28.90
   },
   {
@@ -62,16 +63,18 @@ const games = [
     gender: 'Entretenimiento',
     year: 2019,
     description: 'I sell a new game because they gave it to me and I already had it.',
+    contact:0987-0945,
     price: 30
   },
   {
     imageUrl:"https://res.cloudinary.com/dlbu6iemy/image/upload/v1584018103/boxGame/park_gwbnck.jpg",
     _id: game3,
     type: 'Pc',
-    title: ' Xbox One South Park: La Vara de la Verdad',
+    title: 'South Park: La Vara de la Verdad',
     gender: ' Aventura',
     year: 2018,
     description: 'juego en buen estado para pasar tardes divetidas con los colegas',
+    contact:6537-8729,
     price: 15.50
   },
   {
@@ -82,6 +85,7 @@ const games = [
     gender: ' Deportes',
     year: 2011,
     description: 'Vendo gioco per ps3 in buone condizioni, meglio vedere',
+    contact:0567-9108,
     price: 17
   },
   {
@@ -92,6 +96,7 @@ const games = [
     gender: ' Entretenimiento',
     year: 2019,
     description: 'vendo el mejor juego de Resident Evil de todos los tiempos, buen estado , caja original',
+    contact:8763-9867,
     price: 50.90
   },
   {
@@ -102,6 +107,7 @@ const games = [
     gender: ' Entretenimiento',
     year: 1998,
     description: 'estoy buscando este juego retro de pokemon si alguin lo tiene contactar',
+    contact:6148-4529,
     price: 60
   },
   {
@@ -112,6 +118,7 @@ const games = [
     gender: 'Videojuego de plataformas',
     year: 1991,
     description: '',
+    contact:6294-8451,
     price: 30
   },
   {
@@ -122,6 +129,7 @@ const games = [
     gender: 'football',
     year: 1990,
     description: 'I have been looking for this family range console game for a long time now I am a collector',
+    contact:6907-5721,
     price: 60
   },
   {
@@ -132,6 +140,7 @@ const games = [
     gender: 'Entretenimiento',
     year: 1997,
     description: 'I sell final game fantasie in good condition, short time of use',
+    contact:9506-4217,
     price: 40
   },
   {
@@ -142,6 +151,7 @@ const games = [
     gender: 'Entretenimiento',
     year: 1993,
     description: 'estoy buscando el juego de mi infancia el Doom para remorar las tardes despues del colegio.',
+    contact:9515-278,
     price: 50
   },
   {
@@ -152,6 +162,7 @@ const games = [
     gender: 'Carreras',
     year: 1999,
     description: 'vendo el mejor juego de carreras de PS I',
+    contact:639-646,
     price: 15
   },
   {
@@ -162,6 +173,7 @@ const games = [
     gender: 'Entretenimiento',
     year: 1997,
     description: 'compro juego DONKEY KONG en buen estado',
+    contact:678-359,
     price: 20
   },
   {
@@ -172,6 +184,7 @@ const games = [
     gender: 'Plataformas',
     year: 1987,
     description: 'vendo super mario bros',
+    contact:6583-5214,
     price: 17
   }
 ]
@@ -185,6 +198,7 @@ const consoles = [
     memoryCapacity: '1TB',
     gameIncluded: 2,
     description: 'se vende PS4 color negra con los juegos Need for Speed heat y Matterfall, todo en buen estado mejor ver y probar',
+    contact:567-7219,
     price: 300
   },
   {
@@ -195,6 +209,7 @@ const consoles = [
     memoryCapacity: '1TB',
     gameIncluded: 1,
     description: 'se vende Xbox One color blanca con poco uso',
+    contact:797-7469,
     price: 250
   },
   {
@@ -205,6 +220,7 @@ const consoles = [
     memoryCapacity: '-',
     gameIncluded: 3,
     description: 'se vende Nintendo Nes bien conservado con los juegos Mario bros3, Exite Bike y Galaxian',
+    contact:2787-7469,
     price: 50
   },
   {
@@ -215,6 +231,7 @@ const consoles = [
     memoryCapacity: '-',
     gameIncluded: 3,
     description: ' vendo Game Boy Color',
+    contact:60237-2159,
     price: 100
   },
   {
@@ -225,6 +242,7 @@ const consoles = [
     memoryCapacity: 'Memory Card 128Mb',
     gameIncluded: 3,
     description: 'PS I color gris con los juegos Metal Gear,Crash Racing y Tom Raider',
+    contact:95154-2159,
     price: 150
   },
   {
@@ -235,6 +253,7 @@ const consoles = [
     memoryCapacity: '-',
     gameIncluded: 1,
     description: 'includes the game The Legend of Zelda',
+    contact:69347-2159,
     price: 90
   },
   {
@@ -245,6 +264,7 @@ const consoles = [
     memoryCapacity: '-',
     gameIncluded: 1,
     description: 'In vendita tamagotchi in buone condizioni',
+    contact:46687-2159,
     price: 20
   },
   {
@@ -255,6 +275,7 @@ const consoles = [
     memoryCapacity: '-',
     gameIncluded: 3,
     description: 'incluye juegos Sonic the Hedgehog 2,Mortal Kombat 3 y Streets of Rage 2',
+    contact:77637-2159,
     price: 60
   },
   {
@@ -265,6 +286,7 @@ const consoles = [
     memoryCapacity: '-',
     gameIncluded: 3,
     description: 'incluye juegos Sonic the Hedgehog 2,Mortal Kombat 3 y Streets of Rage 2',
+    contact:5679-28959,
     price: 200
   },
   {
@@ -275,6 +297,7 @@ const consoles = [
     memoryCapacity: '-',
     gameIncluded: 0,
     description: 'compro game color',
+    contact:56737-2159,
     price: 90
   }
 ]

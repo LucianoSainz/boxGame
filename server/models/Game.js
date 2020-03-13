@@ -8,7 +8,8 @@ const gameSchema = new Schema({
   year: Number, 
   imageUrl: { type: String },
   description: String,
-  price: Number
+  price: Number,
+  contact:Number
 
 });
 

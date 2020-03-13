@@ -8,7 +8,8 @@ const consolesSchema = new Schema({
   gameIncluded: Number,
   description: String,
   imageUrl: { type: String },
-  price: Number
+  price: Number,
+  contact:Number
 
 });
 

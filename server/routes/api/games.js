@@ -22,6 +22,7 @@ router.get('/', (req, res, next) => {
   .catch (err => next(err))
   console.log('error');
 })
+
 router.get('/:id', (req, res, next) => {
   Games.findById(req.params.id)
   .then(onegame => {

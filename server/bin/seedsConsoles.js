@@ -12,6 +12,7 @@ const consoles = [
     memoryCapacity:'1TB',
     gameIncluded: 2,
     description:'se vende PS4 color negra con los juegos Need for Speed heat y Matterfall, todo en buen estado mejor ver y probar',
+    contact:567-7219,
     price: 300
   },
   {
@@ -21,6 +22,7 @@ const consoles = [
     memoryCapacity:'1TB',
     gameIncluded: 1,
     description:'se vende Xbox One color blanca con poco uso',
+    contact:797-7469,
     price: 250
   },
   {
@@ -30,6 +32,7 @@ const consoles = [
     memoryCapacity:'-',
     gameIncluded: 3,
     description:'se vende Nintendo Nes bien conservado con los juegos Mario bros3, Exite Bike y Galaxian',
+    contact:2787-7469,
     price: 50
   },
   {
@@ -39,6 +42,7 @@ const consoles = [
     memoryCapacity:'-',
     gameIncluded: 3,
     description:' vendo Game Boy Color',
+    contact:60237-2159,
     price: 100
   },
   {
@@ -48,6 +52,7 @@ const consoles = [
     memoryCapacity:'Memory Card 128Mb',
     gameIncluded: 3,
     description:'PS I color gris con los juegos Metal Gear,Crash Racing y Tom Raider',
+    contact:95154-2159,
     price: 150
   },
   {
@@ -57,6 +62,7 @@ const consoles = [
     memoryCapacity:'-',
     gameIncluded: 1,
     description:'includes the game The Legend of Zelda',
+    contact:69347-2159,
     price: 90
   },
   {
@@ -66,6 +72,7 @@ const consoles = [
     memoryCapacity:'-',
     gameIncluded: 1,
     description:'In vendita tamagotchi in buone condizioni',
+    contact:46687-2159,
     price: 20
   },
   {
@@ -75,6 +82,7 @@ const consoles = [
     memoryCapacity:'-',
     gameIncluded: 3,
     description:'incluye juegos Sonic the Hedgehog 2,Mortal Kombat 3 y Streets of Rage 2',
+    contact:77637-2159,
     price:60
   },
   {
@@ -84,6 +92,7 @@ const consoles = [
     memoryCapacity:'-',
     gameIncluded: 3,
     description:'incluye juegos Sonic the Hedgehog 2,Mortal Kombat 3 y Streets of Rage 2',
+    contact:5679-28959,
     price:200
   },
  {
@@ -93,6 +102,7 @@ const consoles = [
     memoryCapacity:'-',
     gameIncluded: 0,
     description:'compro game color',
+    contact:56737-2159,
     price:90
  }
 ];
