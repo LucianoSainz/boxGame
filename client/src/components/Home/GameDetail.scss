@@ -2,16 +2,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100vw;
+    margin-top: 50px;
+
 }
 
 
 .gameDet{ 
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-
-p{
-    text-align: center;
+    
+    
 }
 
-}
+
+
+

@@ -1,6 +1,8 @@
 import React from 'react';
 import Service from '../../services/Service';
 import './addGame.scss';
+
+
 class addGame extends React.Component {
   constructor(props) {
     super(props);
@@ -11,7 +13,8 @@ class addGame extends React.Component {
       year: '',
       imageUrl: '',
       description: '',
-      price: ''
+      price: '',
+      contact:''
     };
     this.service = new Service();
   }
@@ -27,6 +30,7 @@ class addGame extends React.Component {
                 imageUrl: "",
                 description: "",
                 price: "",
+                contact:'',
             }, () => this.props.history.push('/home'))
         })
         .catch(error => {
@@ -79,19 +83,28 @@ class addGame extends React.Component {
       price: event.target.value
     });
   };
+  handleContactInput = event => {
+    this.setState({
+      contact: event.target.value
+    });
+  }
   render() {
     return (
-      <div className="row">
+      <div>
       <div className='formular'>
-        <form onSubmit={this.handleFormSubmit}>
-          <h5>add the game you want to sell</h5>
-          <label>Type:</label>
+        <form onSubmit={this.handleFormSubmit} className="form">
+          <h4 className="title">Add the game you want to sell</h4>
+        
+          <div>
+          <label>Console:</label>
           <input
             type='text'
             name='type'
             value={this.state.type}
             onChange={e => this.handleTypeInput(e)}
           />
+          </div>
+          <div>
           <label>Title:</label>
           <input
             type='text'
@@ -99,6 +112,8 @@ class addGame extends React.Component {
             value={this.state.title}
             onChange={e => this.handleTitleInput(e)}
           />
+          </div>
+          <div>
           <label>Gender:</label>
           <input
             type='text'
@@ -106,6 +121,8 @@ class addGame extends React.Component {
             value={this.state.gender}
             onChange={e => this.handleGenderInput(e)}
           />
+          </div>
+          <div>
           <label>Year:</label>
           <input
             type='number'
@@ -113,19 +130,34 @@ class addGame extends React.Component {
             value={this.state.year}
             onChange={e => this.handleYearInput(e)}
           />
+          </div>
+          <div>
           <label>image:</label>
           <input
             type='file'
             name='imageUrl'
             onChange={e => this.handleFileUpload(e)}
           />
+          </div>
+          <div>
           <label>Desription:</label>
-          <input
+          <textarea
             type='text'
             name='description'
             value={this.state.description}
             onChange={e => this.handleDescriptionInput(e)}
           />
+          </div>
+          <div>
+          <label>Cotact:</label>
+          <input
+            type='number'
+            name='contact'
+            value={this.state.contact}
+            onChange={e => this.handleContactInput(e)}
+          />
+          </div>
+          <div>
           <label>Price:</label>
           <input
             type='number'
@@ -133,10 +165,14 @@ class addGame extends React.Component {
             value={this.state.price}
             onChange={e => this.handlePriceInput(e)}
           />
+          </div>
+          <div className="btn">
           <input type='submit' value='Submit' />
+        </div>
         </form>
       </div>
       </div>
+      
     );
   }
 }

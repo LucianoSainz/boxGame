@@ -1,5 +1,6 @@
 import React from 'react';
 import Service from '../../services/Service';
+import './addConsoles.scss';
 
 
 class AddConsoles extends React.Component {
@@ -97,8 +98,11 @@ class AddConsoles extends React.Component {
     render() {
         return (
             <div>
+                <div className='formular'>
                 <form onSubmit={this.handleFormSubmit}>
-                    <h5>add the console you want to sell</h5>
+                    <h4 className="title">Add the console you want to sell</h4>
+
+                    <div>
                     <label>ConsoleModel:</label>
                     <input
                         type='text'
@@ -106,6 +110,8 @@ class AddConsoles extends React.Component {
                         value={this.state.consoleModel}
                         onChange={(e) => this.handleConsoleModelInput(e)}
                     />
+                    </div>
+                    <div>
                     <label>ControlIncluded:</label>
                     <input
                         type='text'
@@ -113,6 +119,8 @@ class AddConsoles extends React.Component {
                         value={this.state.controlIncluded}
                         onChange={(e) => this.handleControlIncludedInput(e)}
                     />
+                    </div>
+                    <div>
                     <label>MemoryCapacity:</label>
                     <input
                         type='number'
@@ -120,6 +128,8 @@ class AddConsoles extends React.Component {
                         value={this.state.memoryCapacity}
                         onChange={e => this.handleMemoryCapacityInput(e)}
                     />
+                    </div>
+                    <div>
                     <label>GameIncluded:</label>
                     <input
                         type='text'
@@ -127,19 +137,25 @@ class AddConsoles extends React.Component {
                         value={this.state.gameIncluded}
                         onChange={e => this.handleGameIncludedInput(e)}
                     />
+                    </div>
+                    <div>
                     <label>Image:</label>
                     <input
                         type="file"
                         name="imageUrl"
                         onChange={e => this.handleFileUpload(e)}
                     />
+                    </div>
+                    <div>
                     <label>Desription:</label>
-                    <input
+                    <textarea
                         type="text"
                         name="description"
                         value={this.state.description}
                         onChange={e => this.handleDescriptionInput(e)}
                     />
+                    </div>
+                    <div>
                     <label>Price:</label>
                     <input
                         type="number"
@@ -147,10 +163,13 @@ class AddConsoles extends React.Component {
                         value={this.state.price}
                         onChange={e => this.handlePriceInput(e)}
                     />
-
+                    </div>
+                    <div className="btn">
                     <input type="submit" value="Submit" />
+                    </div>
                 </form>
             </div>
+          </div>
         )
     }
 }

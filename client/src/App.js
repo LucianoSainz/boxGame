@@ -34,6 +34,7 @@ class App extends Component {
 
     // fetchConsoles = () => {
     // console.log("esto es Consoles")
+   
     this.service.getConsoles()
     .then(response => {
       this.setState({
@@ -105,7 +106,7 @@ class App extends Component {
                 <Route exact path="/home" render={()=><Home consoles={this.state.consoles} games={this.state.games} ></Home>} /> 
                 <Route exact path="/addGame" render={(props)=><AddGame user={this.state.loggedInUser} {...props}></AddGame>} /> 
                 <Route exact path="/addConsoles" render={(props)=><AddConsoles user={this.state.loggedInUser} {...props}></AddConsoles>} />  
-                <Route exact path="/profile" render={()=><Profile></Profile>} />          
+                <Route exact path="/profile" render={(props)=><Profile user={this.state.loggedInUser} {...props}></Profile>} />          
                 <Route exact path="/game/:id" render={(props) =><GameDetail fetchGames={this.fetchGames} allGames={this.state.games} {...props}></GameDetail>} />
                 <Route exact path="/console/:id" render={(props) =><ConsolesDetails fetchConsoles={this.fetchConsoles} allConsoles={this.state.consoles} {...props}></ConsolesDetails>} />
               </Switch> 

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useReducer } from 'react';
 
 
 function Profile(props) {
@@ -6,7 +6,8 @@ function Profile(props) {
         <div>
         <img></img>
         <p>name:</p>
-        <p>email:</p>
+        <p>game:</p>
+        <p>console:</p>
       </div>
      
     )

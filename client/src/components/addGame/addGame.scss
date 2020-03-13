@@ -1,13 +1,25 @@
 
-.row{
-      flex-direction: column;
-      display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .formular{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    
+
 }
+label {
+    display: block;
+    margin: .5em 0 0 0;
+  }
+
+  .btn {
+    display: block;
+    margin: 1em 0;
+  }
+
+  .title{
+      font-size: 30px;
+      font-family: 'Spartan', sans-serif;
+    color:#005385;
+  }
