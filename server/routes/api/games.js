@@ -15,8 +15,10 @@ router.post('/upload', uploader.single("imageUrl"), (req, res, next) => {
  res.json({ secure_url: req.file.secure_url });
 })
 router.get('/', (req, res, next) => {
+  console.log("entra")
   Games.find()
   .then(allgames => {
+    console.log(allgames)
     res.json(allgames)
   })
   .catch (err => next(err))

@@ -11,17 +11,19 @@ import Service from './services/Service';
 import AuthService from "./services/AuthService";
 import AddGame from "./components/addGame/AddGame";
 import AddConsoles from "./components/addConsoles/AddConsoles";
-import Profile from "./components/Profile/Profile"
+
 
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = { 
+      games:[],
+      consoles:[],
       loggedInUser: null,
-      games: [],
-      consoles: []
-    };
+      
+    }
+
     this.service = new Service()
     this.authService = new AuthService();
     this.fetchUser();
@@ -32,8 +34,7 @@ class App extends Component {
     this.fetchGames();
     //this.fetchConsoles();
 
-    // fetchConsoles = () => {
-    // console.log("esto es Consoles")
+   
    
     this.service.getConsoles()
     .then(response => {
@@ -48,7 +49,7 @@ class App extends Component {
     this.service.getGames()
     .then(response => {
       this.setState({
-        games: response
+        games:response
       })
     })
   }
@@ -103,10 +104,9 @@ class App extends Component {
             <main>
               
               <Switch>
-                <Route exact path="/home" render={()=><Home consoles={this.state.consoles} games={this.state.games} ></Home>} /> 
+                <Route exact path="/home" render={()=><Home consoles={this.state.consoles}  games={this.state.games} ></Home>} /> 
                 <Route exact path="/addGame" render={(props)=><AddGame user={this.state.loggedInUser} {...props}></AddGame>} /> 
                 <Route exact path="/addConsoles" render={(props)=><AddConsoles user={this.state.loggedInUser} {...props}></AddConsoles>} />  
-                {/* <Route exact path="/profile" render={(props)=><Profile user={this.state.loggedInUser} {...props}></Profile>} />           */}
                 <Route exact path="/game/:id" render={(props) =><GameDetail fetchGames={this.fetchGames} allGames={this.state.games} {...props}></GameDetail>} />
                 <Route exact path="/consoles/:id" render={(props) =><ConsolesDetails fetchConsoles={this.fetchConsoles} allConsoles={this.state.consoles} {...props}></ConsolesDetails>} />
               </Switch> 

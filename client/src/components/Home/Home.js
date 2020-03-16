@@ -3,9 +3,8 @@ import {Link} from "react-router-dom"
 import logo from "../navbar/logo_transparent.png";
 import "./Home.scss"
 
-
 function Home(props) {
-
+console.log(props.games)
     return (
         
           <div>
@@ -16,11 +15,12 @@ function Home(props) {
         {/* SECTION GAMES */}
         <div className="all">
         <div className="games">
-          <h3>Our best offers Games:</h3>
-          
-          {props.games.map(game => (
-            <Link className="sect" to={"game/"+game._id}>
-             
+          <h3>our best offers Games</h3>
+        
+          {
+            props.games.map(game =>(
+            <Link to={"game/"+game._id}>
+            
               <div className="info">
                   <img className="info"src={game.imageUrl} alt=""/>
                   <div>
@@ -36,7 +36,7 @@ function Home(props) {
       {/* SECTION CONSOLES */}
       
       <div className="consoles" >
-        <h3>Our best deals on consoles:</h3>
+        <h3>our best deals on consoles</h3>
           {props.consoles.map(consol => (
               <Link to={"consoles/"+consol._id}>
                 <div className="info">
@@ -51,7 +51,7 @@ function Home(props) {
       </div>
      
      
-      </div>
+       </div>
 
     )
 }

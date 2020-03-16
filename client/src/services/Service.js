@@ -7,6 +7,7 @@ class Service {
     });
   }
   getGames = () => {
+    console.log("entra")
     return this.service.get("/games")
       .then(response => response.data)
   }
