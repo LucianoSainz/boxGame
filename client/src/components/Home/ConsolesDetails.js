@@ -11,7 +11,7 @@ class ConsolesDetails extends React.Component {
         return this.props.fetchConsoles()
     }
 
-    // Annadir redireccion a login
+   
     render () {
         return (
             <div>

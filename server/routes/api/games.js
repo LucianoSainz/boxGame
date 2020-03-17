@@ -15,10 +15,8 @@ router.post('/upload', uploader.single("imageUrl"), (req, res, next) => {
  res.json({ secure_url: req.file.secure_url });
 })
 router.get('/', (req, res, next) => {
-  console.log("entra")
   Games.find()
   .then(allgames => {
-    console.log(allgames)
     res.json(allgames)
   })
   .catch (err => next(err))
@@ -32,9 +30,11 @@ router.get('/:id', (req, res, next) => {
   })
   .catch (err => console.log('error'))
 })
+
 router.delete("/:id", (req, res, next) => {
-    Games.findByIdAndDelete(req.params.id).then(deletedGame =>
-       res.json({ deleted: true, deletedGame })
+  console.log(id)
+    Games.findByIdAndDelete(req.params.id).then(deletedGames =>
+       res.json({ deleted: true, deletedGames })
      );
    });
 router.post('/add-game/:userId', (req, res, next) => {

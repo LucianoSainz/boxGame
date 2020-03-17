@@ -1,6 +1,7 @@
 import React from 'react';
 import { Redirect } from 'react-router-dom';
 import "./GameDetail.scss"
+import axios from "axios";
 
 class GameDetail extends React.Component {
     constructor(props) {
@@ -11,7 +12,10 @@ class GameDetail extends React.Component {
         return this.props.fetchGames()
     }
 
-    // Annadir redireccion a login
+    deletedGames(id) {
+        this.props.onDeleteGames(id);
+      }
+
     render () {
         return (
             <div>
@@ -23,6 +27,7 @@ class GameDetail extends React.Component {
             .map(game => ( 
                 <div>
                 <div className="gameDet" >
+                
                 <img src= {game.imageUrl} /> 
                 <p><strong>console:</strong> {game.type}</p>
                 <p><strong>title:</strong> {game.title}</p>
@@ -31,8 +36,8 @@ class GameDetail extends React.Component {
                 <p><strong>description:</strong> {game.description}</p>
                 <p><strong>contact:</strong>{game.contact}</p>
                 <p><strong>price:</strong> {game.price } €</p>
-                
-                
+                <button onClick={() => this.deletedGames(this.props._id)}>🗑</button>
+               
                 
                 
                 
