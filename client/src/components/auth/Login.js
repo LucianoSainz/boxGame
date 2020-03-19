@@ -22,7 +22,8 @@ class Login extends Component {
           username: username,
           password: password,
           error: false
-        });
+        }, ()=> {this.props.history.push('/')}
+        );
 
         this.props.getUser(response)
       })

@@ -21,8 +21,8 @@ console.log(props.games)
             props.games.map(game =>(
             <Link to={"game/"+game._id}>
             
-              <div className="info">
-                  <img className="info"src={game.imageUrl} alt=""/>
+              <div className="infoGame">
+                  <img className="infoImg"src={game.imageUrl} alt=""/>
                   <div>
                   <h4>{game.title}</h4>
                   </div>
@@ -39,8 +39,8 @@ console.log(props.games)
         <h3>our best deals on consoles</h3>
           {props.consoles.map(consol => (
               <Link to={"consoles/"+consol._id}>
-                <div className="info">
-                  <img src={consol.imageUrl} alt=""/>
+                <div className="infoGame">
+                  <img className="infoImg" src={consol.imageUrl} alt=""/>
                   <div>
                   <h4>{consol.consoleModel}</h4>
                   </div>

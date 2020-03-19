@@ -30,7 +30,7 @@ class Navbar extends Component {
           </div>
           <div className="one">
             <div className="two">
-              <Link className="linav" to="/home">Home</Link>
+              <Link className="linav" to="/">Home</Link>
             </div>
             <div className="two">
               <Link className="linav" to="/addGame">AddGame</Link>
@@ -61,7 +61,7 @@ class Navbar extends Component {
                 <Link className="linav" to="/signup">Signup</Link>
               </div>
               <div className="two">
-                <Link className="linav" to="/home">Home</Link>
+                <Link className="linav" to="/">Home</Link>
               </div>
 
             </div>

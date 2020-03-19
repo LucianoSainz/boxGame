@@ -105,37 +105,45 @@ class AddConsoles extends React.Component {
                         <h4 className="title">Add the console you want to sell</h4>
 
                         <div>
-                            <label>ConsoleModel:</label>
+                            <label>Console Model:</label>
                             <input
                                 type='text'
                                 name='consoleModel'
+                                required
+                                placeholder="Nintendo"
                                 value={this.state.consoleModel}
                                 onChange={(e) => this.handleConsoleModelInput(e)}
                             />
                         </div>
                         <div>
-                            <label>ControlIncluded:</label>
+                            <label>Control Included:</label>
                             <input
-                                type='text'
+                                type='number'
                                 name='controlIncluded'
+                                required
+                                placeholder="2"
                                 value={this.state.controlIncluded}
                                 onChange={(e) => this.handleControlIncludedInput(e)}
                             />
                         </div>
                         <div>
-                            <label>MemoryCapacity:</label>
+                            <label>Memory Capacity:</label>
                             <input
                                 type='number'
                                 name='MemoryCapacity'
+                                required
+                                placeholder="16"
                                 value={this.state.memoryCapacity}
                                 onChange={e => this.handleMemoryCapacityInput(e)}
                             />
                         </div>
                         <div>
-                            <label>GameIncluded:</label>
+                            <label>Game Included:</label>
                             <input
                                 type='text'
                                 name='GameIncluded'
+                                required
+                                placeholder="Mario Bros"
                                 value={this.state.gameIncluded}
                                 onChange={e => this.handleGameIncludedInput(e)}
                             />
@@ -145,6 +153,7 @@ class AddConsoles extends React.Component {
                             <input
                                 type="file"
                                 name="imageUrl"
+                                required
                                 onChange={e => this.handleFileUpload(e)}
                             />
                         </div>
@@ -153,15 +162,19 @@ class AddConsoles extends React.Component {
                             <textarea
                                 type="text"
                                 name="description"
+                                required
+                                placeholder="console in good condition"
                                 value={this.state.description}
                                 onChange={e => this.handleDescriptionInput(e)}
                             />
                         </div>
                         <div>
-                            <label>Cotact:</label>
+                            <label>Contact:</label>
                             <input
-                                type='number'
-                                name='contact'
+                                type='text'
+                                name='email'
+                                required
+                                placeholder="boxgame@gmail.com"
                                 value={this.state.contact}
                                 onChange={e => this.handleContactInput(e)}
                             />
@@ -172,12 +185,14 @@ class AddConsoles extends React.Component {
                             <input
                                 type="number"
                                 name="price"
+                                required
+                                placeholder="20"
                                 value={this.state.price}
                                 onChange={e => this.handlePriceInput(e)}
                             />
                         </div>
-                        <div className="btn">
-                            <input type="submit" value="Submit" />
+                        <div>
+                            <button className="botons" type="submit" value="Submit">Submit</button> 
                         </div>
                     </form>
                 </div>

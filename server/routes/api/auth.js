@@ -97,28 +97,28 @@ router.get('/loggedin', (req, res, next) => {
   res.status(403).json({ message: 'Unauthorized' });
 });
 
-router.post('/edit', (req, res, next) => {
-  console.log(req.body, req.params)
+// router.post('/edit', (req, res, next) => {
+//   console.log(req.body, req.params)
 
 
-  User.findByIdAndUpdate(req.body.id, req.body)
-    .then(() => {
-      res.json({ message: `User with ${req.body.id} is updated successfully.` });
-    })
-    .catch(err => {
-      res.json(err);
-    })
-})
+//   User.findByIdAndUpdate(req.body.id, req.body)
+//     .then(() => {
+//       res.json({ message: `User with ${req.body.id} is updated successfully.` });
+//     })
+//     .catch(err => {
+//       res.json(err);
+//     })
+// })
 
-router.post('/upload', parser.single('picture'), (req, res, next) => {
-  User.findByIdAndUpdate(req.body.id, { image: req.file.url })
-    .then(() => {
-      res.json({
-        success: true,
-        image: req.file.url
-      })
-    })
-})
+// router.post('/upload', parser.single('picture'), (req, res, next) => {
+//   User.findByIdAndUpdate(req.body.id, { image: req.file.url })
+//     .then(() => {
+//       res.json({
+//         success: true,
+//         image: req.file.url
+//       })
+//     })
+// })
 
 router.get('/currentuser', (req,res,next) => {
   if(req.user){

@@ -11,13 +11,21 @@ label {
     margin: .5em 0 0 0;
   }
 
-  .btn {
-    display: block;
-    margin: 1em 0;
+  input {
+    height:25px;
+    border-radius: 5px; 
   }
-
   .title{
       font-size: 30px;
       font-family: 'Spartan', sans-serif;
     color:#005385;
+  }
+
+  .botons{
+    background-color: #005385;;
+    color:#fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 50px;
   }

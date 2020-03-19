@@ -11,7 +11,7 @@ import Service from './services/Service';
 import AuthService from "./services/AuthService";
 import AddGame from "./components/addGame/AddGame";
 import AddConsoles from "./components/addConsoles/AddConsoles";
-import axios from "axios";
+
 
 
 class App extends Component {
@@ -92,7 +92,24 @@ class App extends Component {
   }
 
   deleteExistingGames(id) {
-    axios.delete(`http://localhost:4000/games/${id}`)
+    console.log('entra aqui')
+    console.log(id)
+    this.service.deleteGame(id)
+    // .then(loquesea)
+  }
+
+  deleteGame = (id) => {
+    return this.service.deleteGame(id)
+    .then(response =>{
+      this.fetchGames()
+    })
+  }
+
+  deleteConsole = (id) => {
+    return this.service.deleteConsole(id)
+    .then(respose =>{
+     this.fetchConsoles()
+    })
   }
 
   render() {
@@ -108,11 +125,11 @@ class App extends Component {
             <main>
               
               <Switch>
-                <Route exact path="/home" render={()=><Home consoles={this.state.consoles}  games={this.state.games} ></Home>} /> 
+                <Route exact path="/" render={()=><Home consoles={this.state.consoles}  games={this.state.games} ></Home>} /> 
                 <Route exact path="/addGame" render={(props)=><AddGame user={this.state.loggedInUser} {...props}></AddGame>} /> 
                 <Route exact path="/addConsoles" render={(props)=><AddConsoles user={this.state.loggedInUser} {...props}></AddConsoles>} />  
-                <Route exact path="/game/:id" render={(props) =><GameDetail fetchGames={this.fetchGames} allGames={this.state.games} {...props}  onDeleteGames={id => this.deleteExistingGames(id)}></GameDetail>} />
-                <Route exact path="/consoles/:id" render={(props) =><ConsolesDetails fetchConsoles={this.fetchConsoles} allConsoles={this.state.consoles} {...props}></ConsolesDetails>} />
+                <Route exact path="/game/:id" render={(props) =><GameDetail fetchGames={this.fetchGames} allGames={this.state.games} {...props}  onDeleteGame={id => this.deleteGame(id)}></GameDetail>} />
+                <Route exact path="/consoles/:id" render={(props) =><ConsolesDetails fetchConsoles={this.fetchConsoles} allConsoles={this.state.consoles} {...props} onDeleteConsole={id => this.deleteConsole(id)}></ConsolesDetails>} />
               </Switch> 
               <Footer></Footer>
             </main>
@@ -130,8 +147,8 @@ class App extends Component {
             </header>
             <main>
               <Switch>
-                <Route exact path="/home" render={()=><Home consoles={this.state.consoles} games={this.state.games}></Home>} />              
-                <Route exact path="/login" render={() => <Login getUser={this.getUser} />} />
+                <Route exact path="/" render={()=><Home consoles={this.state.consoles} games={this.state.games}></Home>} />              
+                <Route exact path="/login" render={(props) => <Login {...props} getUser={this.getUser} />} />
                 <Route exact path="/signup" render={() => <Signup getUser={this.getUser} />} />
                 <Route exact path="/game/:id" render={(props) =><Redirect to = "/login"/>} />
                 <Route exact path="/consoles/:id" render={(props) =><Redirect to ="/login"/>} />

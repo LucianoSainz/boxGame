@@ -23,6 +23,7 @@ h3{
 
 .all{
     background: #fff;
+   
     
 
 .games{
@@ -32,20 +33,28 @@ h3{
 	flex-wrap: nowrap;
 	justify-content: flex-start;
 	align-items: stretch;
-	align-content: stretch;
+    align-content: stretch;
+    
 
 }
 }
-.info{
+.infoGame{
     flex-direction: column;
     display: flex;
     justify-content: center;
     align-items: center;
 
+.infoImg:hover{
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+}
 
 .sect {
     text-decoration: none;
 
 }
 }
+
+
 

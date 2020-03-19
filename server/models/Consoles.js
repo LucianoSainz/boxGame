@@ -4,12 +4,12 @@ const Schema = mongoose.Schema;
 const consolesSchema = new Schema({
   consoleModel: String,
   controlIncluded: Number,
-  memoryCapacity: String,
-  gameIncluded: Number,
+  memoryCapacity: Number,
+  gameIncluded: String,
   description: String,
   imageUrl: { type: String },
   price: Number,
-  contact:Number
+  contact:String
 
 });
 

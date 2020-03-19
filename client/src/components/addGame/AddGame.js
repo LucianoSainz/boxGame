@@ -100,6 +100,8 @@ class addGame extends React.Component {
           <input
             type='text'
             name='type'
+            required
+            placeholder="PS3"
             value={this.state.type}
             onChange={e => this.handleTypeInput(e)}
           />
@@ -109,6 +111,8 @@ class addGame extends React.Component {
           <input
             type='text'
             name='title'
+            required
+            placeholder="Sonic"
             value={this.state.title}
             onChange={e => this.handleTitleInput(e)}
           />
@@ -118,6 +122,8 @@ class addGame extends React.Component {
           <input
             type='text'
             name='gender'
+            required
+            placeholder="adventure"
             value={this.state.gender}
             onChange={e => this.handleGenderInput(e)}
           />
@@ -127,6 +133,8 @@ class addGame extends React.Component {
           <input
             type='number'
             name='year'
+            required
+            placeholder="2012"
             value={this.state.year}
             onChange={e => this.handleYearInput(e)}
           />
@@ -136,14 +144,17 @@ class addGame extends React.Component {
           <input
             type='file'
             name='imageUrl'
+            required
             onChange={e => this.handleFileUpload(e)}
           />
           </div>
           <div>
-          <label>Desription:</label>
+          <label>Description:</label>
           <textarea
             type='text'
             name='description'
+            required
+            placeholder="game with little use"
             value={this.state.description}
             onChange={e => this.handleDescriptionInput(e)}
           />
@@ -151,8 +162,10 @@ class addGame extends React.Component {
           <div>
           <label>Cotact:</label>
           <input
-            type='number'
-            name='contact'
+            type='text'
+            name='email'
+            required
+            placeholder="boxgame@gmail.com"
             value={this.state.contact}
             onChange={e => this.handleContactInput(e)}
           />
@@ -162,13 +175,16 @@ class addGame extends React.Component {
           <input
             type='number'
             name='price'
+            required
+            placeholder="20"
             value={this.state.price}
             onChange={e => this.handlePriceInput(e)}
           />
           </div>
-          <div className="btn">
-          <input type='submit' value='Submit' />
+          <div>
+          <button className="botons" type='submit' value='submit'>Submit</button>
         </div>
+        
         </form>
       </div>
       </div>

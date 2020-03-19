@@ -32,5 +32,14 @@ class Service {
     return this.service.post(`/consoles/add-consoles/${userId}`, newConsoles)
     .then(response => response.data)
   }
+
+  deleteGame(id) {
+    return this.service.delete(`/games/${id}`)
+     .then(response => response.data)
+  }
+  deleteConsole(id) {
+    return this.service.delete(`/consoles/${id}`)
+     .then(response => response.data)
+  }
 } 
 export default Service;

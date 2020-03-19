@@ -2,18 +2,21 @@ import React from 'react';
 import { Redirect } from 'react-router-dom';
 import "./GameDetail.scss"
 import axios from "axios";
+import Service from "../../services/Service"
 
 class GameDetail extends React.Component {
     constructor(props) {
         super(props);
+        this.service = new Service()
     }   
 
     componentDidMount() {
         return this.props.fetchGames()
     }
 
-    deletedGames(id) {
-        this.props.onDeleteGames(id);
+
+    deleteGame = (id) => {
+        this.props.onDeleteGame(id)
       }
 
     render () {
@@ -36,7 +39,7 @@ class GameDetail extends React.Component {
                 <p><strong>description:</strong> {game.description}</p>
                 <p><strong>contact:</strong>{game.contact}</p>
                 <p><strong>price:</strong> {game.price } €</p>
-                <button onClick={() => this.deletedGames(this.props._id)}>🗑</button>
+                <button className="btn" onClick={() => this.deleteGame(game._id)}>🗑 delete</button>
                
                 
                 

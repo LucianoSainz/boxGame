@@ -32,11 +32,11 @@ router.get('/:id', (req, res, next) => {
 })
 
 router.delete("/:id", (req, res, next) => {
-  console.log(id)
-    Games.findByIdAndDelete(req.params.id).then(deletedGames =>
-       res.json({ deleted: true, deletedGames })
+    Games.findByIdAndDelete(req.params.id).then(deleteGames =>
+       res.json({ deleteGames })
      );
    });
+
 router.post('/add-game/:userId', (req, res, next) => {
   Games.create(req.body).then(gameCreated =>
     User.findByIdAndUpdate(req.params.userId, {
@@ -45,5 +45,7 @@ router.post('/add-game/:userId', (req, res, next) => {
     .then(response => res.json(response))
   );
 })
+
+
 
 module.exports = router;

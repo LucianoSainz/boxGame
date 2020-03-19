@@ -25,6 +25,12 @@ router.get('/', (req, res, next) => {
   console.log('error');
 })
 
+router.delete("/:id", (req, res, next) => {
+  Consoles.findByIdAndDelete(req.params.id).then(deleteConsoles =>
+     res.json({ deleteConsoles })
+   );
+ });
+
 router.post('/add-consoles/:userId', (req, res, next) => {
   Consoles.create(req.body).then(consolesCreated =>
     User.findByIdAndUpdate(req.params.userId, {
@@ -33,5 +39,7 @@ router.post('/add-consoles/:userId', (req, res, next) => {
     .then(response => res.json(response))
   );
 })
+
+
 module.exports = router;
 
