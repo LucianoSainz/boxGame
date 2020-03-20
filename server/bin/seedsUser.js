@@ -45,248 +45,248 @@ const consoles10 = new mongoose.mongo.ObjectID();
 
 const games = [
   {
-    imageUrl:"https://res.cloudinary.com/dlbu6iemy/image/upload/v1584018319/boxGame/71srfb1tCXL._AC_SY355__ovsjsd.jpg",
+    imageUrl: "https://res.cloudinary.com/dlbu6iemy/image/upload/v1584018319/boxGame/71srfb1tCXL._AC_SY355__ovsjsd.jpg",
     _id: game1,
     type: 'Juego Nintendo Switch',
     title: 'Luigi s Mansion 3',
     gender: 'adventure',
     year: 2019,
     description: 'vendo juego la Mansion de Luigi s 3 en buen estado',
-    contact:5677689,
+    contact: "charly@hotmail.com",
     price: 28.90
   },
   {
-    imageUrl:"https://res.cloudinary.com/dlbu6iemy/image/upload/v1584018103/boxGame/spider_tddwu6.png",
+    imageUrl: "https://res.cloudinary.com/dlbu6iemy/image/upload/v1584018103/boxGame/spider_tddwu6.png",
     _id: game2,
     type: 'Juego PS4',
     title: 'Juego PS4 Marvel´s Spider-Man',
     gender: 'Entretenimiento',
     year: 2019,
     description: 'I sell a new game because they gave it to me and I already had it.',
-    contact:09870945,
+    contact: "caro@gmail.com",
     price: 30
   },
   {
-    imageUrl:"https://res.cloudinary.com/dlbu6iemy/image/upload/v1584018103/boxGame/park_gwbnck.jpg",
+    imageUrl: "https://res.cloudinary.com/dlbu6iemy/image/upload/v1584018103/boxGame/park_gwbnck.jpg",
     _id: game3,
     type: 'Pc',
     title: 'South Park: La Vara de la Verdad',
     gender: ' Aventura',
     year: 2018,
     description: 'juego en buen estado para pasar tardes divetidas con los colegas',
-    contact:65378729,
+    contact: "sergio@yahoo.com",
     price: 15.50
   },
   {
-    imageUrl:"https://res.cloudinary.com/dlbu6iemy/image/upload/v1584018103/boxGame/ps_mzeffi.jpg",
+    imageUrl: "https://res.cloudinary.com/dlbu6iemy/image/upload/v1584018103/boxGame/ps_mzeffi.jpg",
     _id: game4,
     type: ' Juego PS3',
     title: ' PES 2011',
     gender: ' Deportes',
     year: 2011,
     description: 'Vendo gioco per ps3 in buone condizioni, meglio vedere',
-    contact:05673402,
+    contact: "sara@hotmail.com",
     price: 17
   },
   {
-    imageUrl:"https://res.cloudinary.com/dlbu6iemy/image/upload/v1584018103/boxGame/res_q4qhgp.jpg",
+    imageUrl: "https://res.cloudinary.com/dlbu6iemy/image/upload/v1584018103/boxGame/res_q4qhgp.jpg",
     _id: game5,
     type: ' Juego PS4',
     title: ' Resident Evil 3 Remake PS4',
     gender: ' Entretenimiento',
     year: 2019,
     description: 'vendo el mejor juego de Resident Evil de todos los tiempos, buen estado , caja original',
-    contact:87639867,
+    contact: "pedro@gmail.com",
     price: 50.90
   },
   {
-    imageUrl:"https://res.cloudinary.com/dlbu6iemy/image/upload/v1584018103/boxGame/Pokemon_uyrcwm.png",
+    imageUrl: "https://res.cloudinary.com/dlbu6iemy/image/upload/v1584018103/boxGame/Pokemon_uyrcwm.png",
     _id: game6,
     type: 'Game Boy Color',
     title: 'Pokemon especial pikachu edicion',
     gender: ' Entretenimiento',
     year: 1998,
     description: 'estoy buscando este juego retro de pokemon si alguin lo tiene contactar',
-    contact:61484529,
+    contact: "cris@hotmail.com",
     price: 60
   },
   {
-    imageUr:"https://res.cloudinary.com/dlbu6iemy/image/upload/v1584018103/boxGame/sonic_pvfbrz.jpg",
+    imageUr: "https://res.cloudinary.com/dlbu6iemy/image/upload/v1584018103/boxGame/sonic_pvfbrz.jpg",
     _id: game7,
     type: 'Sega',
     title: 'Sonic the Hedgehog',
     gender: 'Videojuego de plataformas',
     year: 1991,
     description: '',
-    contact:62948451,
+    contact: "paco@yahoo.com",
     price: 30
   },
   {
-    imageUrl:"https://res.cloudinary.com/dlbu6iemy/image/upload/v1584018103/boxGame/super_ubv49c.jpg",
+    imageUrl: "https://res.cloudinary.com/dlbu6iemy/image/upload/v1584018103/boxGame/super_ubv49c.jpg",
     _id: game8,
     type: 'Family Game',
     title: 'Captain Tsubasa Vol. II: Super Striker',
     gender: 'football',
     year: 1990,
     description: 'I have been looking for this family range console game for a long time now I am a collector',
-    contact:69075721,
+    contact: "jaime@hotmail.com",
     price: 60
   },
   {
-    imageUrl:"https://res.cloudinary.com/dlbu6iemy/image/upload/v1584018122/boxGame/ffs_yp22sr.jpg",
+    imageUrl: "https://res.cloudinary.com/dlbu6iemy/image/upload/v1584018122/boxGame/ffs_yp22sr.jpg",
     _id: game9,
     type: 'PS I',
     title: 'Final Fantasy VII',
     gender: 'Entretenimiento',
     year: 1997,
     description: 'I sell final game fantasie in good condition, short time of use',
-    contact:95064217,
+    contact: "frank@gmail.com",
     price: 40
   },
   {
-    imageUrl:"https://res.cloudinary.com/dlbu6iemy/image/upload/v1584018122/boxGame/Doom_yd4iha.jpg",
+    imageUrl: "https://res.cloudinary.com/dlbu6iemy/image/upload/v1584018122/boxGame/Doom_yd4iha.jpg",
     _id: game10,
     type: 'PC',
     title: 'Doom',
     gender: 'Entretenimiento',
     year: 1993,
     description: 'estoy buscando el juego de mi infancia el Doom para remorar las tardes despues del colegio.',
-    contact:9515278,
+    contact: "sergio@yahoo.com",
     price: 50
   },
   {
-    imageUrl:"https://res.cloudinary.com/dlbu6iemy/image/upload/v1584018122/boxGame/driver_gtqyip.jpg",
+    imageUrl: "https://res.cloudinary.com/dlbu6iemy/image/upload/v1584018122/boxGame/driver_gtqyip.jpg",
     _id: game11,
     type: 'PS I',
     title: 'Driver',
     gender: 'Carreras',
     year: 1999,
     description: 'vendo el mejor juego de carreras de PS I',
-    contact:639646,
+    contact: "kike@gmail.com",
     price: 15
   },
   {
-    imageUrl:"https://res.cloudinary.com/dlbu6iemy/image/upload/v1584018122/boxGame/Donkey_Kong_ujidp4.jpg",
+    imageUrl: "https://res.cloudinary.com/dlbu6iemy/image/upload/v1584018122/boxGame/Donkey_Kong_ujidp4.jpg",
     _id: game12,
     type: 'Game Boy',
     title: 'Donkey Kong Land 3',
     gender: 'Entretenimiento',
     year: 1997,
     description: 'compro juego DONKEY KONG en buen estado',
-    contact:678359,
+    contact: "maria@hotmail.com",
     price: 20
   },
   {
-     imageUrl:"https://res.cloudinary.com/dlbu6iemy/image/upload/v1584018103/boxGame/Super_Mario_yq7ff1.png",
+    imageUrl: "https://res.cloudinary.com/dlbu6iemy/image/upload/v1584018103/boxGame/Super_Mario_yq7ff1.png",
     _id: game13,
     type: 'Nintendo Nes',
     title: 'Super Mario Bros',
     gender: 'Plataformas',
     year: 1987,
     description: 'vendo super mario bros',
-    contact:65835214,
+    contact: "cesar@gmail.com",
     price: 17
   }
 ]
 
 const consoles = [
   {
-    imageUrl:"https://res.cloudinary.com/dlbu6iemy/image/upload/v1584021432/boxGame/ps4_ixxxtc.jpg",
+    imageUrl: "https://res.cloudinary.com/dlbu6iemy/image/upload/v1584021432/boxGame/ps4_ixxxtc.jpg",
     _id: consoles1,
     consoleModel: 'PS4',
     controlsIncluded: 2,
-    memoryCapacity: '1TB',
+    memoryCapacity: '600',
     gameIncluded: 2,
     description: 'se vende PS4 color negra con los juegos Need for Speed heat y Matterfall, todo en buen estado mejor ver y probar',
-    contact:5677219,
+    contact: "miriam@hotmail.com",
     price: 300
   },
   {
-    imageUrl:"https://res.cloudinary.com/dlbu6iemy/image/upload/v1584021442/boxGame/xbox_nkxccv.jpg",
+    imageUrl: "https://res.cloudinary.com/dlbu6iemy/image/upload/v1584021442/boxGame/xbox_nkxccv.jpg",
     _id: consoles2,
     consoleModel: 'Microsoft Xbox One',
     controlsIncluded: 1,
-    memoryCapacity: '1TB',
+    memoryCapacity: '1',
     gameIncluded: 1,
     description: 'se vende Xbox One color blanca con poco uso',
-    contact:7977469,
+    contact: "gema@gmail.com",
     price: 250
   },
   {
-    imageUrl:"https://res.cloudinary.com/dlbu6iemy/image/upload/v1584021520/boxGame/nintendo_nes_uuz3rx.jpg",
+    imageUrl: "https://res.cloudinary.com/dlbu6iemy/image/upload/v1584021520/boxGame/nintendo_nes_uuz3rx.jpg",
     _id: consoles3,
     consoleModel: 'Nintendo Nes',
     controlsIncluded: 2,
-    memoryCapacity: '-',
+    memoryCapacity: 0,
     gameIncluded: 3,
     description: 'se vende Nintendo Nes bien conservado con los juegos Mario bros3, Exite Bike y Galaxian',
-    contact:27877469,
+    contact: "nano@yahoo.com",
     price: 50
   },
   {
-    imageUrl:"https://res.cloudinary.com/dlbu6iemy/image/upload/v1584021463/boxGame/gameboycolor_d31fam.jpg",
+    imageUrl: "https://res.cloudinary.com/dlbu6iemy/image/upload/v1584021463/boxGame/gameboycolor_d31fam.jpg",
     _id: consoles4,
     consoleModel: 'Game Boy Color',
     controlsIncluded: 0,
-    memoryCapacity: '-',
+    memoryCapacity: 0,
     gameIncluded: 3,
     description: ' vendo Game Boy Color',
-    contact:602372159,
+    contact: "roberto@gmail.com",
     price: 100
   },
   {
-    imageUrl:"https://res.cloudinary.com/dlbu6iemy/image/upload/v1584021432/boxGame/ps1_qsxqeo.jpg",
+    imageUrl: "https://res.cloudinary.com/dlbu6iemy/image/upload/v1584021432/boxGame/ps1_qsxqeo.jpg",
     _id: consoles5,
     consoleModel: 'PS I',
     controlsIncluded: 2,
-    memoryCapacity: 'Memory Card 128Mb',
+    memoryCapacity: '128',
     gameIncluded: 3,
     description: 'PS I color gris con los juegos Metal Gear,Crash Racing y Tom Raider',
-    contact:951542159,
+    contact: "jose@hotmail.com",
     price: 150
   },
   {
-    imageUrl:"https://res.cloudinary.com/dlbu6iemy/image/upload/v1584021463/boxGame/Game-Boy_itk91k.jpg",
+    imageUrl: "https://res.cloudinary.com/dlbu6iemy/image/upload/v1584021463/boxGame/Game-Boy_itk91k.jpg",
     _id: consoles6,
     consoleModel: 'Game Boy',
     controlsIncluded: 0,
-    memoryCapacity: '-',
+    memoryCapacity: 0,
     gameIncluded: 1,
     description: 'includes the game The Legend of Zelda',
-    contact:693472159,
+    contact: "nico@gmail.com",
     price: 90
   },
   {
-    imageUrl:"https://res.cloudinary.com/dlbu6iemy/image/upload/v1584021432/boxGame/tama_u6nble.jpg",
+    imageUrl: "https://res.cloudinary.com/dlbu6iemy/image/upload/v1584021432/boxGame/tama_u6nble.jpg",
     _id: consoles7,
     consoleModel: 'tamagotchi',
     controlsIncluded: 0,
-    memoryCapacity: '-',
+    memoryCapacity: 0,
     gameIncluded: 1,
     description: 'In vendita tamagotchi in buone condizioni',
-    contact:466872159,
+    contact: "mica@hotmail.com",
     price: 20
   },
   {
-    imageUrl:"https://res.cloudinary.com/dlbu6iemy/image/upload/v1584021432/boxGame/sega_gksjvm.jpg",
+    imageUrl: "https://res.cloudinary.com/dlbu6iemy/image/upload/v1584021432/boxGame/sega_gksjvm.jpg",
     _id: consoles8,
     consoleModel: 'Sega Genesis',
     controlsIncluded: 2,
-    memoryCapacity: '-',
+    memoryCapacity: 0,
     gameIncluded: 3,
     description: 'incluye juegos Sonic the Hedgehog 2,Mortal Kombat 3 y Streets of Rage 2',
-    contact:776372159,
+    contact: "juan@yahoo.com",
     price: 60
   },
   {
-    imageUrl:"https://res.cloudinary.com/dlbu6iemy/image/upload/v1584021432/boxGame/ps3_xz1imf.jpg",
+    imageUrl: "https://res.cloudinary.com/dlbu6iemy/image/upload/v1584021432/boxGame/ps3_xz1imf.jpg",
     _id: consoles9,
     consoleModel: 'PS3',
     controlsIncluded: 2,
-    memoryCapacity: '-',
+    memoryCapacity: 0,
     gameIncluded: 3,
     description: 'incluye juegos Sonic the Hedgehog 2,Mortal Kombat 3 y Streets of Rage 2',
-    contact:567928959,
+    contact: "daniel@hotmail.com",
     price: 200
   },
   {
@@ -294,10 +294,10 @@ const consoles = [
     _id: consoles10,
     consoleModel: 'Game Boy Color',
     controlsIncluded: 0,
-    memoryCapacity: '-',
+    memoryCapacity: 0,
     gameIncluded: 0,
     description: 'compro game color',
-    contact:567372159,
+    contact: "luz@yahoo.com",
     price: 90
   }
 ]
@@ -406,35 +406,26 @@ mongoose
   // .then(_ => collection.collection.drop())
   // .then(_ => game.collection.drop)
 
- .then(_ => {
-     Game.create(games, (err) => {
+  .then(_ => {
+    Game.create(games, (err) => {
       if (err) { throw (err) }
       console.log(`Created ${games.length} games`)
-        
-          Consoles.create(consoles, (err) => {
-            if (err) { throw (err) }
-            console.log(`Created ${consoles.length} consoles`)
-          
-            return User.create(user, (err) => {
-              if (err) { throw (err) }
-              console.log(`Created ${user.length} user`)
-              mongoose.connection.close()
-            })
-          })
+
+      Consoles.create(consoles, (err) => {
+        if (err) { throw (err) }
+        console.log(`Created ${consoles.length} consoles`)
+
+        return User.create(user, (err) => {
+          if (err) { throw (err) }
+          console.log(`Created ${user.length} user`)
+          mongoose.connection.close()
         })
+      })
     })
+  })
 
   .catch(err => {
     console.error('Error connecting to mongo', err)
   });
 
 
-  // Game.create(games, (err) =>{
-  // })
-  // .then(()=>{
-  //   return Player.create()
-  // })
-  // then(()=>{
-  //   return Games2.create()
-  // })
-  // then(()=>console.log("Successfully created"))

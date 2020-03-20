@@ -8,7 +8,7 @@ class AddConsoles extends React.Component {
         super(props);
         this.state = {
             consoleModel: "",
-            controlIncluded: "",
+            controlsIncluded: "",
             memoryCapacity: "",
             gameIncluded: "",
             imageUrl: "",
@@ -25,7 +25,7 @@ class AddConsoles extends React.Component {
             .then(response => {
                 this.setState({
                     consoleModel: "",
-                    controlIncluded: "",
+                    controlsIncluded: "",
                     memoryCapacity: "",
                     gameIncluded: "",
                     imageUrl: "",
@@ -47,9 +47,9 @@ class AddConsoles extends React.Component {
         })
     }
 
-    handleControlIncludedInput = (event) => {
+    handleControlsIncludedInput = (event) => {
         this.setState({
-            controlIncluded: event.target.value
+            controlsIncluded: event.target.value
         })
     }
     handleMemoryCapacityInput = (event) => {
@@ -119,11 +119,11 @@ class AddConsoles extends React.Component {
                             <label>Control Included:</label>
                             <input
                                 type='number'
-                                name='controlIncluded'
+                                name='controlsIncluded'
                                 required
                                 placeholder="2"
-                                value={this.state.controlIncluded}
-                                onChange={(e) => this.handleControlIncludedInput(e)}
+                                value={this.state.controlsIncluded}
+                                onChange={(e) => this.handleControlsIncludedInput(e)}
                             />
                         </div>
                         <div>

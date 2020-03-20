@@ -3,7 +3,7 @@ const Schema = mongoose.Schema;
 
 const consolesSchema = new Schema({
   consoleModel: String,
-  controlIncluded: Number,
+  controlsIncluded: Number,
   memoryCapacity: Number,
   gameIncluded: String,
   description: String,

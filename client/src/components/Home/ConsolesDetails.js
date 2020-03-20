@@ -28,12 +28,12 @@ class ConsolesDetails extends React.Component {
                 <div>
                 <div className="gameDet" >
                 <img src= {consoles.imageUrl} /> 
-                <p><strong>console:</strong> {consoles.consoleModel}</p>
-                <p><strong>controls:</strong> {consoles.controlIncluded}</p>
-                <p><strong>memory:</strong> {consoles.memoryCapacity}</p>
-                <p><strong>included game:</strong> {consoles.gameIncluded}</p>
-                <p><strong>description:</strong> {consoles.description}</p>
-                <p><strong>contact:</strong> {consoles.contact}</p>
+                <p><strong>console:</strong>  {consoles.consoleModel}</p>
+                <p><strong>controls:</strong>  {consoles.controlsIncluded}</p>
+                <p><strong>memory:</strong>  {consoles.memoryCapacity}</p>
+                <p><strong>included game:</strong>  {consoles.gameIncluded}</p>
+                <p><strong>description:</strong>  {consoles.description}</p>
+                <p><strong>contact:</strong>  {consoles.contact}</p>
                 <p><strong>price:</strong> {consoles.price } €</p>
                 <button className="btn" onClick={() => this.deleteConsole(consoles._id)}>🗑 delete</button>
                 </div>
